@@ -3,306 +3,308 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-stylesheet type="text/xsl" href="../teipub/xsl/tei2html.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader>
-<fileDesc>
-<titleStmt>
-<title type="main">TrotulaPr1M</title>
-<title type="sub">Edition critique de la première version française en prose du traité <title><foreign xml:lang="lat">De passionibus mulierum</foreign></title> de <persName>Trotula de Salerne</persName></title>
-<author>Anonyme</author>
-<editor>
-<persName xml:id="VM"><forename>Viola </forename> <surname>Mariotti</surname></persName>
-<roleName>Docteure en philologie romane</roleName> et <roleName> chercheuse post-doctorale pour le projet ALMA (Heidelberger Akademie der Wissenschaften ; Romanisches Seminar - Universität Heidelberg).</roleName>
-</editor>
-<principal>
-<persName xml:id="ST"><forename>Sabine</forename> <surname>Tittel</surname>, <roleName>chercheuse en philologie romane (Heidelberger Akademie der Wissenschaften ; Université de Heidelberg - Romanisches Seminar)</roleName> et <roleName>directrice du projet ALMA - Equipe scientifique de Heidelberg (ancien français).</roleName></persName></principal>
-<respStmt>
-<resp>
-Membre du projet ALMA - Equipe scientifique de Heidelberg (ancien français)
-</resp>
-<persName xml:id="RM"><forename>Ragini</forename> <surname>Menon</surname>, <roleName>doctorante en humanités numérique dans le cadre du projet ALMA (dir. <ref corresp="#ST">S. Tittel</ref>).</roleName></persName>
-</respStmt>
-<respStmt>
-<resp>
-Directrice du projet ALMA - Equipe scientifique de Regensburg (ancien occitan)
-</resp>
-<persName xml:id="MS"><forename>Maria</forename> <surname>Selig</surname>, <roleName>professeure de philologie romane à l'Université de Regensburg</roleName>.</persName>
-</respStmt>
-<respStmt>
-<resp>
-Directeur du projet ALMA - Equipe scientifique de Saarbrücken (ancien italien)
-</resp>
-<name><persName xml:id="EP"><forename>Elton</forename> <surname>Prifti</surname>, <roleName>professeur de philologie romane à l'Université de Saarbrücken</roleName>.</persName>
-</name>
-</respStmt>
-<respStmt>
-<resp>
-Directeur du projet ALMA - Equipe scientifique de Saarbrücken (ancien italien)
-</resp>
-<name><persName xml:id="WS"><forename>Wolfgang</forename> <surname>Schweickard</surname>, <roleName>professeur emérite de philologie romane à l'Université de Saarbrücken</roleName>.</persName>
-</name>
-</respStmt>
-</titleStmt>
-<publicationStmt>
-<p/>
-</publicationStmt>
-<sourceDesc>
-<listWit>
-<witness xml:id="S">London, British Library, Sloane 2535, ff. 246vb-253rb, manuscrit de base (siglé S) ;</witness>
-<witness xml:id="W">Paris, Bibliothèque nationale de France, NAF 4138, manuscrit de contrôle (siglé W) ;</witness>
-<witness xml:id="N">Paris, Bibliothèque nationale de France, NAL 693, ff. 181v-183r, manuscrit de controle (siglé N).</witness>
-</listWit>
-<msDesc sameAs="#S"> 
-<msIdentifier>
-<settlement>London</settlement>
-<institution xml:id="london_british_library">
-<orgName>British Library</orgName>
-</institution>
-<repository>Sloane</repository>
-<idno>2435</idno>
-<altIdentifier>
-<idno type="ark"><!-- *revoir la différence entre ark et facs --></idno>
-</altIdentifier>
-<altIdentifier>
-    <idno type="facs">https://www.bl.uk/manuscripts/Viewer.aspx?ref=sloane_ms_3525</idno>
-</altIdentifier>
-</msIdentifier>
-<head>London, British Library, Sloane 3525
-<origDate>Début du XIVe siècle (<ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref>) ; XIVe siècle (<ref corresp="http://jonas.irht.cnrs.fr/manuscrit/31303">Base Jonas</ref>) ; seconde moitié du XIIIe siècle (<ref  corresp="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Sloane_MS_3525">Catalogue British Library</ref>).</origDate>
-</head>
-<physDesc>
-<objectDesc form="codex">
-<supportDesc material="parch">
-<support>Parchemin.</support>
-<extent><num>259</num>  feuillets. La notice de <ref corresp="http://jonas.irht.cnrs.fr/manuscrit/31303">Jonas</ref> précise que les ff. 1-23 ont été ajoutés postérieurement et que les 29 cahiers sont invisibles.</extent>
-<foliation>Foliotation d'époque moderne en chiffres arabes à l'encre brune.</foliation>
-    <collation>29 cahiers (quaternions).</collation> <!-- *revoir - l'élément formula n'est peut-être pas nécessaire  -->
-</supportDesc>
-<layoutDesc>
-<layout columns="2">
-Copié sur deux colonnes, le ms. compte environ 36 lignes par colonne.
-<dimensions type="layout">
-                <height unit="mm">235</height>
-                <width unit="mm">165</width>
-            </dimensions>
-        </layout>
-    </layoutDesc>
-</objectDesc>
-<handDesc hands="1" cert="high">
-<handNote>
-<p> Une seule main qui emploie une écriture livresque gothique.</p>
-<p><q> Aux ff. 1r, 2r, 7v, 22v, 23r, 23v des recettes française d'une main du XVIe s. ; aux ff. 6-16, index analytique écrit d'une main picarde plus récente de celle du copiste du ms.</q>(<ref corresp="http://jonas.irht.cnrs.fr/manuscrit/31303">Jonas</ref>).</p>
- <p>Aux ff. 178v-179r une main anglaise ajoute des recettes médicales (<ref  corresp="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Sloane_MS_3525">Catalogue British Library</ref>). Cet élément paléographique fait songer à une origine anglaise.</p>
-</handNote>
-</handDesc>
-    <scriptDesc>
-        <p><foreign xml:lang="lat">Textualis libraria</foreign> régulière.</p>
-</scriptDesc>
-<decoDesc> <!-- *revoir - je n'ai aucune info sur le décor ni sur la reliure : je laisse les balises vides ou je les efface ? -->
-<p></p>
-</decoDesc>
-<bindingDesc>
-<binding>
-<p></p>
-</binding>
-</bindingDesc>
-</physDesc>
-<history>
-<origin>
-<origPlace>Origine incertaine : Angleterre (localisation par des indices paléographiques : <ref  corresp="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Sloane_MS_3525">Catalogue British Library</ref>) ou France, région parisienne (localisation par la langue : <ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref> et <ref corresp="http://jonas.irht.cnrs.fr/manuscrit/31303">Base Jonas</ref>, d'après P. Meyer, Romania 44 [1915-1917], pp. 182-214).</origPlace>
-<origDate>Début du XIVe siècle (<ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref>) ; XIVe siècle (<ref corresp="http://jonas.irht.cnrs.fr/manuscrit/31303">Base Jonas</ref>) ; seconde moitié du XIIIe siècle (<ref  corresp="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Sloane_MS_3525">Catalogue British Library</ref>).</origDate>
-</origin>
-<provenance>Appartenu à Sir Hans Sloane (né 1660 - mort 1753), physicien et colectionneur de mss. Acquis par le British Museum en 1753 (<ref  corresp="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Sloane_MS_3525">Catalogue British Library</ref>). </provenance>
-</history><!-- *revoir - je voudrais encore ajouter deux choses : 1) une petite biblio sur le ms. 2) l'incipit et l'explicit de TrotulaPr1M 3) Les contenus du ms. (décrit de manière générale) -->
-</msDesc>
-    <msDesc sameAs="#W"> 
-        <msIdentifier>
-            <settlement>London</settlement>
-            <institution xml:id="london_wellcome_institute">
-                <orgName>Wellcome Institute for the history of Medicine Library</orgName>
-            </institution>
-         <idno>546</idno>
-            <altIdentifier>
-                <idno type="ark"><!-- *revoir - différence entre ark et facs --></idno>
-            </altIdentifier>
-            <altIdentifier>
-                <idno type="facs">https://wellcomecollection.org/works/ageynkx7</idno>
-            </altIdentifier>
-        </msIdentifier>
-        <head>London, Wellcome Institute for the history of Medicine Library, 546
-            <origDate>Milieu  du XIVe siècle (<ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref> ; <ref corresp=" http://jonas.irht.cnrs.fr/manuscrit/31733">Base Jonas</ref> - qui cite Hunt 2011 -  et (<ref  corresp="https://wellcomecollection.org/works/ageynkx7">Catalogue Wellcome Institute</ref>).</origDate>
-        </head>
-        <physDesc>
-            <objectDesc form="codex">
-                <supportDesc material="parch">
-                    <support>Parchemin.</support>
-                    <extent><num>91</num>  feuillets</extent>
-                    <foliation></foliation>
-                    <collation></collation><!-- *revoir - aucune info, que faire ? -->
-                </supportDesc>
-                <layoutDesc>
-                    <layout columns="2">
-                        Copié sur deux colonnes, le ms. compte environ 35 lignes par colonne.
-                        <dimensions type="layout">
-                            <height unit="mm">210</height>
-                            <width unit="mm">145</width>
-                        </dimensions>
-                    </layout>
-                </layoutDesc>
-            </objectDesc>
-            <handDesc hands="1" cert="high">
-                <handNote>
-                    <p> Une seule main qui emploie une écriture livresque gothique.</p>
-              </handNote>
-            </handDesc>
-            <scriptDesc>
-                <p><foreign xml:lang="lat">Textualis libraria formata</foreign>.</p>
-            </scriptDesc>
-            <decoDesc> <!-- *revoir - je n'ai aucune info sur le décor ni sur la reliure : je laisse les balises vides ou je les efface ? -->
-                <p></p>
-            </decoDesc>
-            <bindingDesc>
-                <binding>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">TrotulaPr1M</title>
+                <title type="sub">Edition critique de la première version française en prose du traité <title><foreign xml:lang="lat">De passionibus mulierum</foreign></title> de <persName>Trotula de Salerne</persName></title>
+                <author>Anonyme</author>
+                <editor>
+                    <persName xml:id="VM"><forename>Viola </forename> <surname>Mariotti</surname></persName>
+                    <roleName>Docteure en philologie romane</roleName> et <roleName> chercheuse post-doctorale pour le projet ALMA (Heidelberger Akademie der Wissenschaften ; Romanisches Seminar - Universität Heidelberg).</roleName>
+                </editor>
+                <principal>
+                    <persName xml:id="ST"><forename>Sabine</forename> <surname>Tittel</surname>, <roleName>chercheuse en philologie romane (Heidelberger Akademie der Wissenschaften ; Université de Heidelberg - Romanisches Seminar)</roleName> et <roleName>directrice du projet ALMA - Equipe scientifique de Heidelberg (ancien français).</roleName></persName></principal>
+                    <respStmt>
+                        <resp>
+                            Membre du projet ALMA - Equipe scientifique de Heidelberg (ancien français)
+                        </resp>
+                        <persName xml:id="RM"><forename>Ragini</forename> <surname>Menon</surname>, <roleName>doctorante en humanités numérique dans le cadre du projet ALMA (dir. <ref corresp="#ST">S. Tittel</ref>).</roleName></persName>
+                    </respStmt>
+                    <respStmt>
+                        <resp>
+                            Directrice du projet ALMA - Equipe scientifique de Regensburg (ancien occitan)
+                        </resp>
+                        <persName xml:id="MS"><forename>Maria</forename> <surname>Selig</surname>, <roleName>professeure de philologie romane à l'Université de Regensburg</roleName>.</persName>
+                    </respStmt>
+                    <respStmt>
+                        <resp>
+                            Directeur du projet ALMA - Equipe scientifique de Saarbrücken (ancien italien)
+                        </resp>
+                        <name><persName xml:id="EP"><forename>Elton</forename> <surname>Prifti</surname>, <roleName>professeur de philologie romane à l'Université de Saarbrücken</roleName>.</persName>
+                    </name>
+                </respStmt>
+                <respStmt>
+                    <resp>
+                        Directeur du projet ALMA - Equipe scientifique de Saarbrücken (ancien italien)
+                    </resp>
+                    <name><persName xml:id="WS"><forename>Wolfgang</forename> <surname>Schweickard</surname>, <roleName>professeur emérite de philologie romane à l'Université de Saarbrücken</roleName>.</persName>
+                </name>
+            </respStmt>
+        </titleStmt>
+        <publicationStmt>
+            <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness xml:id="S">London, British Library, Sloane 2535, ff. 246vb-253rb, manuscrit de base (siglé S) ;</witness>
+                    <witness xml:id="W">Paris, Bibliothèque nationale de France, NAF 4138, manuscrit de contrôle (siglé W) ;</witness>
+                    <witness xml:id="N">Paris, Bibliothèque nationale de France, NAL 693, ff. 181v-183r, manuscrit de controle (siglé N).</witness>
+                </listWit>
+                <msDesc sameAs="#S"> 
+                    <msIdentifier>
+                        <settlement>London</settlement>
+                        <institution xml:id="london_british_library">
+                            <orgName>British Library</orgName>
+                        </institution>
+                        <repository>Sloane</repository>
+                        <idno>2435</idno>
+                        <altIdentifier>
+                            <idno type="ark"><!-- *revoir la différence entre ark et facs --></idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno type="facs">https://www.bl.uk/manuscripts/Viewer.aspx?ref=sloane_ms_3525</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <head>London, British Library, Sloane 3525
+                        <origDate>Début du XIVe siècle (<ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref>) ; XIVe siècle (<ref corresp="http://jonas.irht.cnrs.fr/manuscrit/31303">Base Jonas</ref>) ; seconde moitié du XIIIe siècle (<ref  corresp="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Sloane_MS_3525">Catalogue British Library</ref>).</origDate>
+                    </head>
+                    <msContents>
+                        <msItem>
+                            <!--Renseigner ici une oeuvre contenue dans le ms.-->
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="parch">
+                                <support>Parchemin.</support>
+                                <extent><num>259</num>  feuillets. La notice de <ref corresp="http://jonas.irht.cnrs.fr/manuscrit/31303">Jonas</ref> précise que les ff. 1-23 ont été ajoutés postérieurement et que les 29 cahiers sont invisibles.</extent>
+                                <foliation>Foliotation d'époque moderne en chiffres arabes à l'encre brune.</foliation>
+                                <collation>29 cahiers (quaternions).</collation> <!-- *revoir - l'élément formula n'est peut-être pas nécessaire  -->
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="2">
+                                    Copié sur deux colonnes, le ms. compte environ 36 lignes par colonne.
+                                    <dimensions type="layout">
+                                        <height unit="mm">235</height>
+                                        <width unit="mm">165</width>
+                                    </dimensions>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc hands="1" cert="high">
+                            <handNote>
+                                <p>Une seule main qui emploie une écriture livresque gothique.</p>
+                                <p><q>Aux ff. 1r, 2r, 7v, 22v, 23r, 23v des recettes française d'une main du XVIe s. ; aux ff. 6-16, index analytique écrit d'une main picarde plus récente de celle du copiste du ms.</q>(<ref corresp="http://jonas.irht.cnrs.fr/manuscrit/31303">Jonas</ref>).</p>
+                                <p>Aux ff. 178v-179r une main anglaise ajoute des recettes médicales (<ref  corresp="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Sloane_MS_3525">Catalogue British Library</ref>). Cet élément paléographique fait songer à une origine anglaise.</p>
+                            </handNote>
+                        </handDesc>
+                        <scriptDesc>
+                            <p><foreign xml:lang="lat">Textualis libraria</foreign> régulière.</p>
+                        </scriptDesc>
+                        <decoDesc> <!-- *revoir - je n'ai aucune info sur le décor ni sur la reliure : je laisse les balises vides ou je les efface ? -->
+                            <p></p>
+                        </decoDesc>
+                        <bindingDesc>
+                            <binding>
+                                <p></p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Origine incertaine : Angleterre (localisation par des indices paléographiques : <ref  corresp="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Sloane_MS_3525">Catalogue British Library</ref>) ou France, région parisienne (localisation par la langue : <ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref> et <ref corresp="http://jonas.irht.cnrs.fr/manuscrit/31303">Base Jonas</ref>, d'après P. Meyer, Romania 44 [1915-1917], pp. 182-214).</origPlace>
+                            <origDate>Début du XIVe siècle (<ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref>) ; XIVe siècle (<ref corresp="http://jonas.irht.cnrs.fr/manuscrit/31303">Base Jonas</ref>) ; seconde moitié du XIIIe siècle (<ref  corresp="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Sloane_MS_3525">Catalogue British Library</ref>).</origDate>
+                        </origin>
+                        <provenance>Appartenu à Sir Hans Sloane (né 1660 - mort 1753), physicien et colectionneur de mss. Acquis par le British Museum en 1753 (<ref  corresp="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Sloane_MS_3525">Catalogue British Library</ref>). </provenance>
+                    </history><!-- *revoir - je voudrais encore ajouter deux choses : 1) une petite biblio sur le ms. 2) l'incipit et l'explicit de TrotulaPr1M 3) Les contenus du ms. (décrit de manière générale) -->
+                </msDesc>
+                <msDesc sameAs="#W"> 
+                    <msIdentifier>
+                        <settlement>London</settlement>
+                        <institution xml:id="london_wellcome_institute">
+                            <orgName>Wellcome Institute for the history of Medicine Library</orgName>
+                        </institution>
+                        <idno>546</idno>
+                        <altIdentifier>
+                            <idno type="ark"><!-- *revoir - différence entre ark et facs --></idno>
+                        </altIdentifier>
+                        <altIdentifier>
+                            <idno type="facs">https://wellcomecollection.org/works/ageynkx7</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <head>London, Wellcome Institute for the history of Medicine Library, 546
+                        <origDate>Milieu  du XIVe siècle (<ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref> ; <ref corresp=" http://jonas.irht.cnrs.fr/manuscrit/31733">Base Jonas</ref> - qui cite Hunt 2011 - et (<ref  corresp="https://wellcomecollection.org/works/ageynkx7">Catalogue Wellcome Institute</ref>).</origDate>
+                    </head>
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="parch">
+                                <support>Parchemin.</support>
+                                <extent><num>91</num>  feuillets</extent>
+                                <foliation></foliation>
+                                <collation></collation><!-- *revoir - aucune info, que faire ? -->
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="2">
+                                    Copié sur deux colonnes, le ms. compte environ 35 lignes par colonne.
+                                    <dimensions type="layout">
+                                        <height unit="mm">210</height>
+                                        <width unit="mm">145</width>
+                                    </dimensions>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc hands="1" cert="high">
+                            <handNote>
+                                <p> Une seule main qui emploie une écriture livresque gothique.</p>
+                            </handNote>
+                        </handDesc>
+                        <scriptDesc>
+                            <p><foreign xml:lang="lat">Textualis libraria formata</foreign>.</p>
+                        </scriptDesc>
+                        <decoDesc> <!-- *revoir - je n'ai aucune info sur le décor ni sur la reliure : je laisse les balises vides ou je les efface ? -->
+                            <p></p>
+                        </decoDesc>
+                        <bindingDesc>
+                            <binding>
+                                <p></p>
+                            </binding>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace>Origine non mentionnées explicitement par les catalogues. Dans <ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref> France méridionale.</origPlace>
+                            <origDate>Milieu  du XIVe siècle (<ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref> ; <ref corresp=" http://jonas.irht.cnrs.fr/manuscrit/31733">Base Jonas</ref> - qui cite Hunt 2011 -  et (<ref  corresp="https://wellcomecollection.org/works/ageynkx7">Catalogue Wellcome Institute</ref>).</origDate>
+                        </origin>
+                        <provenance>Deux feuillets de garde en parchemin au début du ms. Sur le verso du premier, anthroponyme <q>Saudon</q> (?) rédigé par une main du début du XVe siècle. Sur le verso du second, mention suivante : 
+                        <q><l>Ce present liure appartient a </l>
+                        <l>Berthellemy le Roy demeurant</l>
+                        <l>paris en la Rue de la</l>
+                        <l>riviere au dit lieu au lougis</l>
+                        <l>de monsieur de Vignaulx</l>
+                    </q>
+                    En dessous de cette mention, signature de J[ean] B[aptiste] L[ouis] Chomel [1700-1765], le célèbre physicien français. Encore en dessous, mentions:   
+                    <q>Acheté 25 f. Ce livre a appartenu à Chomel</q> ;
+                    <q>Acheté à la vente de Mr. Bosquillon an 10' [180 1/2]</q>. 
+                    La dernière mention pourrait faire songer au chimiste français Edouard François Michel Bosquillon [1744-1816]. (<ref  corresp="https://wellcomecollection.org/works/ageynkx7">Catalogue Wellcome Institute</ref>). </provenance>
+                </history> <!-- *revoir - je voudrais encore ajouter deux choses : 1) une petite biblio sur le ms. 2) l'incipit et l'explicit de TrotulaPr1M 3) Les contenus du ms. (décrit de manière générale) -->
+            </msDesc>
+            <msDesc sameAs="#N"> 
+                <msIdentifier>
+                    <settlement>Paris</settlement>
+                    <institution xml:id="Bibliothèque_nationale_de_France">
+                        <orgName>Bibliothèque Nationale de France</orgName>
+                    </institution>
+                    <repository>Nouvelles acquisitions latines</repository>
+                    <idno>963</idno>
+                    <altIdentifier>
+                        <idno type="ark"><!-- *revoir - revoir la différence entre ark et facs --></idno>
+                    </altIdentifier>
+                    <altIdentifier>
+                        <idno type="facs">https://archivesetmanuscrits.bnf.fr/ark:/12148/cc713933</idno>
+                    </altIdentifier>
+                </msIdentifier>
+                <head>Paris, Bibliothèque nationale de France, nouvelles acquisitions latines 693
+                    <origDate>XIIIe - XIVe siècle (<ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref> ; <ref corresp="https://jonas.irht.cnrs.fr/manuscrit/73193">Base Jonas</ref>  et <ref  corresp="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc713933">BnF Archives et manuscrits - fichier F. Avril</ref>).</origDate>
+                </head>
+                <physDesc>
+                    <objectDesc form="codex">
+                        <supportDesc material="parch">
+                            <support></support>
+                            <extent><num></num></extent>
+                            <foliation></foliation>
+                            <collation></collation> <!-- *revoir - aucune info, que faire ? -->
+                        </supportDesc>
+                        <layoutDesc>
+                            <layout columns="2">
+                               <dimensions type="layout">
+                                <height unit="mm"></height>
+                                <width unit="mm"></width>
+                            </dimensions>
+                        </layout>
+                    </layoutDesc>
+                </objectDesc>
+                <handDesc hands="1" cert="high">
+                    <handNote>
+                        <p><!-- VM à compléter car le ms. a été rédigé par plusieurs mains --></p>
+                    </handNote>
+                </handDesc>
+                <scriptDesc>
+                    <p>.</p>
+                </scriptDesc>
+                <decoDesc> <!-- *revoir - je n'ai aucune info sur le décor ni sur la reliure : je laisse les balises vides ou je les efface ? -->
                     <p></p>
-                </binding>
-            </bindingDesc>
-        </physDesc>
-        <history>
-            <origin>
-                <origPlace>Origine non mentionnées explicitement par les catalogues. Dans <ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref> France méridionale.</origPlace>
-                <origDate>Milieu  du XIVe siècle (<ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref> ; <ref corresp=" http://jonas.irht.cnrs.fr/manuscrit/31733">Base Jonas</ref> - qui cite Hunt 2011 -  et (<ref  corresp="https://wellcomecollection.org/works/ageynkx7">Catalogue Wellcome Institute</ref>).</origDate>
-</origin>
-<provenance>Deux feuillets de garde en parchemin au début du ms. Sur le verso du premier, anthroponyme <q>Saudon</q> (?) rédigé par une main du début du XVe siècle. Sur le verso du second, mention suivante : 
-<q><l>Ce present liure appartient a </l>
-<l>Berthellemy le Roy demeurant</l>
-<l>paris en la Rue de la</l>
-<l>riviere au dit lieu au lougis</l>
-<l>de monsieur de Vignaulx</l>
-</q>
-En dessous de cette mention, signature de J[ean] B[aptiste] L[ouis] Chomel [1700-1765], le célèbre physicien français. Encore en dessous, mentions:   
-<q>Acheté 25 f. Ce livre a appartenu à Chomel</q> ;
-<q>Acheté à la vente de Mr. Bosquillon an 10' [180 1/2]</q>. 
- La dernière mention pourrait faire songer au chimiste français Edouard François Michel Bosquillon [1744-1816]. (<ref  corresp="https://wellcomecollection.org/works/ageynkx7">Catalogue Wellcome Institute</ref>). </provenance>
-        </history> <!-- *revoir - je voudrais encore ajouter deux choses : 1) une petite biblio sur le ms. 2) l'incipit et l'explicit de TrotulaPr1M 3) Les contenus du ms. (décrit de manière générale) -->
-    </msDesc>
-    <msDesc sameAs="#N"> 
-        <msIdentifier>
-            <settlement>Paris</settlement>
-            <institution xml:id="Bibliothèque_nationale_de_France">
-                <orgName>Bibliothèque Nationale de France</orgName>
-            </institution>
-            <repository>Nouvelles acquisitions latines</repository>
-            <idno>963</idno>
-            <altIdentifier>
-                <idno type="ark"><!-- *revoir - revoir la différence entre ark et facs --></idno>
-            </altIdentifier>
-            <altIdentifier>
-                <idno type="facs">https://archivesetmanuscrits.bnf.fr/ark:/12148/cc713933</idno>
-            </altIdentifier>
-        </msIdentifier>
-        <head>Paris, Bibliothèque nationale de France, nouvelles acquisitions latines 693
-            <origDate>XIIIe - XIVe siècle (<ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref> ; <ref corresp="https://jonas.irht.cnrs.fr/manuscrit/73193">Base Jonas</ref>  et <ref  corresp="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc713933">BnF Archives et manuscrits - fichier F. Avril</ref>).</origDate>
-        </head>
-        <physDesc>
-            <objectDesc form="codex">
-                <supportDesc material="parch">
-                    <support></support>
-                    <extent><num></num></extent>
-                    <foliation></foliation>
-                    <collation></collation> <!-- *revoir - aucune info, que faire ? -->
-                </supportDesc>
-                <layoutDesc>
-                    <layout columns="2">
-                     <dimensions type="layout">
-                            <height unit="mm"></height>
-                            <width unit="mm"></width>
-                        </dimensions>
-                    </layout>
-                </layoutDesc>
-            </objectDesc>
-            <handDesc hands="1" cert="high">
-                <handNote>
-                    <p><!-- VM à compléter car le ms. a été rédigé par plusieurs mains --></p>
-                </handNote>
-            </handDesc>
-            <scriptDesc>
-                <p>.</p>
-            </scriptDesc>
-            <decoDesc> <!-- *revoir - je n'ai aucune info sur le décor ni sur la reliure : je laisse les balises vides ou je les efface ? -->
-                <p></p>
-            </decoDesc>
-            <bindingDesc>
-                <binding>
-                    <p></p>
-                </binding>
-            </bindingDesc>
-        </physDesc>
-        <history>
-            <origin>
-                <origPlace>Origine non mentionnées explicitement par les catalogues. Dans <ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref> France méridionale.</origPlace>
-                <origDate></origDate>
-            </origin>
-            <provenance></provenance>
-        </history> 
-        <!-- *revoir - je voudrais encore ajouter deux choses : 1) une petite biblio sur le ms. 2) l'incipit et l'explicit de TrotulaPr1M 3) Les contenus du ms. (décrit de manière générale) -->
-    </msDesc>
-    <!-- *revoir - Ajouter ici Turin ? -->
-</sourceDesc>
-    </fileDesc>
-    <profileDesc>
-        <creation>
-            <date>2023-02-02</date>
-        </creation>
-        <langUsage>
-            <language ident="fr" usage="50">Français.</language>
-        </langUsage>
- </profileDesc>
+                </decoDesc>
+                <bindingDesc>
+                    <binding>
+                        <p></p>
+                    </binding>
+                </bindingDesc>
+            </physDesc>
+            <history>
+                <origin>
+                    <origPlace>Origine non mentionnées explicitement par les catalogues. Dans <ref corresp="https://alma.hadw-bw.de/deafbibl/bib99t.html#TrotulaPr1M">DEAFBIbl</ref> France méridionale.</origPlace>
+                    <origDate></origDate>
+                </origin>
+                <provenance></provenance>
+            </history> 
+            <!-- *revoir - je voudrais encore ajouter deux choses : 1) une petite biblio sur le ms. 2) l'incipit et l'explicit de TrotulaPr1M 3) Les contenus du ms. (décrit de manière générale) -->
+        </msDesc>
+        <!-- *revoir - Ajouter ici Turin ? -->
+    </sourceDesc>
+</fileDesc>
+<profileDesc>
+    <creation>
+        <date>2023-02-02</date>
+    </creation>
+    <langUsage>
+        <language ident="fr" usage="50">Français.</language>
+    </langUsage>
+</profileDesc>
 <encodingDesc>
-<p> Notre encodage s'aligne sur les schémas XML-TEI réalisés à l'Ecole nationale des chartes par <bibl>F. Glorieux</bibl> et <bibl>V. Jolivet </bibl>et documentés par <bibl>O. Guyotjeannin</bibl> et <bibl>O. Canteaut</bibl>. Bien que ces schémas aient été prévus pour les actes documentaires, ils peuvent également être utilisés pour les textes littéraires. Lorsque nous en avons ressenti le besoin, nous nous sommes également éloignés desdits schémas en concevant nous-mêmes des solutions d'encodage customisé mais toujours dans le respect des normes prévues par les <title>Guidelines</title> de la communauté TEI. Une ODD restrictive avec une documentation détaillée permet de comprendre quels ont été les choix d'encodage du projet ALMA.</p>
+    <p> Notre encodage s'aligne sur les schémas XML-TEI réalisés à l'Ecole nationale des chartes par <bibl>F. Glorieux</bibl> et <bibl>V. Jolivet </bibl>et documentés par <bibl>O. Guyotjeannin</bibl> et <bibl>O. Canteaut</bibl>. Bien que ces schémas aient été prévus pour les actes documentaires, ils peuvent également être utilisés pour les textes littéraires. Lorsque nous en avons ressenti le besoin, nous nous sommes également éloignés desdits schémas en concevant nous-mêmes des solutions d'encodage customisé mais toujours dans le respect des normes prévues par les <title>Guidelines</title> de la communauté TEI. Une ODD restrictive avec une documentation détaillée permet de comprendre quels ont été les choix d'encodage du projet ALMA.</p>
 </encodingDesc>
 <revisionDesc>
-<change when="2023-02-02" resp="#VM">Création du fichier de l'éd. XML-TEI de TrotulaPr1M.</change>
+    <change when="2023-02-02" resp="#VM">Création du fichier de l'éd. XML-TEI de TrotulaPr1M.</change>
 </revisionDesc>
 </teiHeader>
 <text xml:id="TrotulaPr1M_edition">
-<front>
-    <div xml:id="principes_edition"><!-- simplifier les xml:id -->
-                 <div xml:id="tradition_manuscrite">
-    <head>La tradition manuscrite de TrotulaPr1 : les rapports entre les témoins</head>
-    <p/><!-- VM à faire -->
-</div>
-                     <div xml:id="choix_mss">
-<head>Choix du manuscrit de base</head>
-    <p/><!-- VM à faire -->
-</div>
-                 <div xml:id="apparat_critique"><!-- VM à faire -->
-     <head>Apparat critique</head>
-<p/>
+    <front>
+        <div xml:id="principes_edition"><!-- simplifier les xml:id -->
+           <div xml:id="tradition_manuscrite">
+            <head>La tradition manuscrite de TrotulaPr1 : les rapports entre les témoins</head>
+            <p/><!-- VM à faire -->
+            </div>
+            <div xml:id="choix_mss">
+                <head>Choix du manuscrit de base</head>
+                <p/><!-- VM à faire -->
+                </div>
+                <div xml:id="apparat_critique"><!-- VM à faire -->
+                   <head>Apparat critique</head>
+                   <p/>
+                   </div>
+                   <div xml:id="toilette_texte">
+                    <head>Toilette du texte</head>
+                    <p>Les critères qui régissent notre toilette du texte ont été décrits dans  <!-- *revoir - Principes d'édition du corpus d'ALMA --></p>
+                </div>
+            </div>
+        </front>
+        <body>
+            <div type="prologue" xml:id="TrotulaPr1M_prologue">
+                <head>[Prologue]</head>
+                <div type="paragraph" n="1" xml:id="TrotulaPr1M_prologue_1">
+                    <label>[1]</label>
+                    <p><pb n="246v"/><cb n="b"/>
+                    <app><lem wit="#N #W"/><rdg wit="#S">Quant</rdg></app> Dex nostre seignor, <app><lem  wit="#N #W">quant il</lem><rdg wit="#S"/></app> out le <app><lem wit="#S #N">mund</lem><rdg wit="#W">secle</rdg></app> estoré, <app><lem  wit="#N #W">et</lem><rdg wit="#S"/></app> <app><lem wit="#S #N">sor tote creature</lem><rdg wit="#W">les autres creatures</rdg></app> <app><lem wit="#S #N">si</lem><rdg wit="#W">/</rdg></app> fist home <app><lem wit="#S #N">raisnable</lem><rdg wit="#W">remuable</rdg></app>, <app><lem wit="#S #N">puis</lem><rdg wit="#W">si</rdg></app> li dona seignorie de totes terrienes choses, si <app><lem wit="#S #N"/><rdg wit="#W">le</rdg></app> commanda à <app><lem wit="#S">creistre</lem><rdg wit="#N">estre</rdg><rdg wit="#W">conoistre</rdg></app> <choice><sic>et</sic><corr/></choice> et à mouteplier <app><lem wit="#S #N"/><rdg wit="#W">home et fame</rdg></app>. Et establi <app><lem wit="#S #N"/><rdg wit="#W">que d'home et fame istroit fruit et</rdg><witDetail wit="#W">ajout interlinaire <hi>fruit</hi> rédigé par une autre main</witDetail></app> ke des deus vendreit le tierz, <app><lem wit="#S #N">et del cors de l’home</lem><rdg wit="#W">premierement dou cors à l'omme</rdg></app>, qui plus est de chaude nature <app><rdgGrp><lem wit="#S #N"><app><lem wit="#S">et deseché, istreit la semence en la feme</lem> <rdg wit="#N">et de lui istereit la semence. E la f.</rdg></app>, ke plus est de freide nature, et de mole la <app><lem wit="#N">recovreit</lem><rdg wit="~#S">reouvreit</rdg></app>, <app><lem wit="#S"/><rdg wit="#N">el comencement meismes est medlé la semence de la femme od la semence de l'home</rdg></app> et par l'atemprement del chalt et del freit et del sec et del moiste <app><lem wit="#S"/><rdg wit="#N">est li germes alevez et creist li e.</rdg></app> creistreit li enfes. Ices quatre choses sunt necessaire ad herbes et as arbres et as blez.</lem></rdgGrp><rdg wit="#W"> istroit la semence et por l'atemprement dou chaut et dou froiz, c'est à savoir de la chalour de l'omme et de la froidor de la famme et dou sec et dou moillié sunt les .iiij. humors, le chaut et le froit, et le sec et le moillié, craist li enfes, si come nous n'oion de ces <sic>abres</sic> et de ces bienz qui ne ci dis sent mie bien sanz l'atrempement de ces .iiij. humeurs. </rdg><witDetail wit="#W">ajout interlinéaire par une autre main qui corrige le <hi>z</hi> de <hi>froiz</hi> en <hi>t</hi>, ajoute le <hi>r</hi> à <hi>abres</hi>, tout comme une lettre illisible au mot <hi>bienz</hi>.</witDetail></app></p> 
+            </div>
+            <div type="paragraph" n="2" xml:id="TrotulaPr1M_prologue_2">
+                <label>[2]</label> 
+                <p>Mais pour ce ke les femes sunt <app><rdgGrp><lem wit="#S #N"><app><lem wit="#N">de plus fieble nature et</lem><rdg wit="#S" cause="homoteuloton"/></app> de plus fieble qualité ke li ome</lem></rdgGrp><rdg wit="#W">mes por ce que les femes</rdg><witDetail wit="#W"><hi>ont le cors plus froit que les homes</hi> ajouté dans la marge gauche par une autre main (la même qui avait déjà corrigé le texte au f. précédent).</witDetail></app> et ount <!-- VM : à voir s'il ne vaut mieux utiliser une typologie de valeurs plus fines pour les fautes de copie, cf. Roncaglia--> greignor travail <app><lem wit="#N">d’enfanter</lem><rdg wit="#S">d'enfant</rdg></app> <app><rdgGrp><lem wit="#S #N">pour ce <app><lem wit="#N">que</lem><rdg wit="#S"/></app></lem></rdgGrp><rdg wit="#W">si</rdg></app> lor avienent <app><lem wit="#S #N">plusors</lem><rdg wit="#W"/></app> enfermetez <app><rdgGrp><lem wit="#S #N">ke as homes <app><lem wit="#S"/><rdg wit="#N">ne font</rdg></app></lem></rdgGrp><rdg wit="#W">au femelles plus qu'as maales</rdg></app>, et maiesmement à cels <app><lem wit="#S #N">membres</lem><rdg wit="#W"/></app> ki à l’engedreure <app><lem wit="#N">apenent</lem><rdg wit="#S">apertienenet</rdg><rdg wit="#W">apertient</rdg></app><!-- agn. N (apenent) -->. Et pour ce ke femes sunt <app><lem wit="#S #N">plus</lem><rdg wit="#W"/></app> huntoses <app><rdgGrp><lem wit="#S #N">de dire lor <app><lem wit="#S">enfermetez</lem><rdg wit="#N">maus</rdg></app> as homes ke as femes, si lor faz icest livre en language ke eles l’entendent, que les unes sachent les altres aidier. Bien sachent que je i met del mielz ke <app><lem wit="#N">apent à</lem><rdg wit="#S"/></app> lor besoigne à lor enfermetez.</lem></rdgGrp><rdg wit="#W">de leur et desconvenne dire plus que les homes, <!--  agn. W (e fet)  --> e fet ce livre à savoir si comme nous commençames que vos meismes savroiz as autres aider.</rdg></app>  <app><lem wit="#N">Car jeo ai overé et trové eu livres <!-- VM : à voir si on fait de la réfection ling. J'en ferai pas car cela ne me dérange pas d'avoir un texte encore plus agn. qui pourrait même être plus proche de l'archétype, qui est certainement agn. --></lem><rdg wit="#S">que je ai trouvé des diz</rdg><rdg wit="#W">Et sachiez que j'en ei ajousté ce que</rdg></app> <persName>Ypocras</persName><app><rdgGrp><lem wit="#S #N"></lem></rdgGrp><rdg wit="#W">en dites</rdg></app> et <persName>Galien</persName> <app><rdgGrp><lem wit="#S #N">et <persName>Costentin</persName> et <persName>Cleopatras</persName></lem><rdg wit="#W">et <persName>Dyopatre</persName> et <persName>Oribasie</persName></rdg></rdgGrp></app>  <app><lem wit="#N">et <persName>Diascorides</persName> et <persName>Almasor</persName> e <persName>Apollo</persName> e <persName>Platearie</persName> et <persName>Rogerine</persName></lem><rdg wit="#S"/><rdg wit="#W">et <persName>Dyacondes</persName> et <persName>Constentin</persName></rdg></app>. <app><rdgGrp><lem wit="#S #N">Et ici trouveront dont li mal <pb n="247r"/><cb n="a"/> vienent et comant <app><lem wit="#N">les garrez</lem><rdg wit="#S">porront guarir</rdg></app></lem></rdgGrp><rdg wit="#W">Si troverez comment les maus i vienent et comment vos les connoistret <!-- agn. W (connoistret)--> et comment voz les guarirez</rdg></app>.</p>
+            </div>
         </div>
-                           <div xml:id="toilette_texte">
-            <head>Toilette du texte</head>
-            <p>Les critères qui régissent notre toilette du texte ont été décrits dans  <!-- *revoir - Principes d'édition du corpus d'ALMA --></p>
-        </div>
-    </div>
-</front>
-<body>
-<div type="prologue" xml:id="TrotulaPr1M_prologue">
-<head>[Prologue]</head>
-<div type="paragraph" n="1" xml:id="TrotulaPr1M_prologue_1">
-<label>[1]</label>
-    <p><pb n="246v"/><cb n="b"/>
-        
-        
- <app><lem wit="#N #W"/><rdg wit="#S">Quant</rdg></app> Dex nostre seignor, <app><lem  wit="#N #W">quant il</lem><rdg wit="#S"/></app> out le <app><lem wit="#S #N">mund</lem><rdg wit="#W">secle</rdg></app> estoré, <app><lem  wit="#N #W">et</lem><rdg wit="#S"/></app> <app><lem wit="#S #N">sor tote creature</lem><rdg wit="#W">les autres creatures</rdg></app> <app><lem wit="#S #N">si</lem><rdg wit="#W">/</rdg></app> fist home <app><lem wit="#S #N">raisnable</lem><rdg wit="#W">remuable</rdg></app>, <app><lem wit="#S #N">puis</lem><rdg wit="#W">si</rdg></app> li dona seignorie de totes terrienes choses, si <app><lem wit="#S #N"/><rdg wit="#W">le</rdg></app> commanda à <app><lem wit="#S">creistre</lem><rdg wit="#N">estre</rdg><rdg wit="#W">conoistre</rdg></app> <choice><sic>et</sic><corr/></choice> et à mouteplier <app><lem wit="#S #N"/><rdg wit="#W">home et fame</rdg></app>. Et establi <app><lem wit="#S #N"/><rdg wit="#W">que d'home et fame istroit fruit et</rdg><witDetail wit="#W">ajout interlinaire <hi>fruit</hi> rédigé par une autre main</witDetail></app> ke des deus vendreit le tierz, <app><lem wit="#S #N">et del cors de l’home</lem><rdg wit="#W">premierement dou cors à l'omme</rdg></app>, qui plus est de chaude nature <app><rdgGrp><lem wit="#S #N"><app><lem wit="#S">et deseché, istreit la semence en la feme</lem><rdg wit="#N">et de lui istereit la semence. E la f.</rdg></app>, ke plus est de freide nature, et de mole la <app><lem  wit="#N">recovreit</lem><rdg wit="~#S">reouvreit</rdg></app>, <app><lem wit="#S"/><rdg wit="#N">el comencement meismes est medlé la semence de la femme od la semence de l'home</rdg></app> et par l'atemprement del chalt et del freit et del sec et del moiste <app><lem wit="#S"/><rdg wit="#N">est li germes alevez et creist li e.</rdg></app> creistreit li enfes. Ices quatre choses sunt necessaire ad herbes et as arbres et as blez.</lem></rdgGrp><rdg wit="#W">istroit la semence et por l'atemprement dou chaut et dou froiz, c'est à savoir de la chalour de l'omme et de la froidor de la famme et dou sec et dou moillié sunt les .iiij. humors, le chaut et le froit, et le sec et le moillié, craist li enfes, si come nous n'oion de ces <sic>abres</sic> et de ces bienz qui ne ci dis sent mie bien sanz l'atrempement de ces .iiij. humeurs. </rdg><witDetail wit="#W">ajout interlinéaire par une autre main qui corrige le <hi>z</hi> de <hi>froiz</hi> en <hi>t</hi>, ajoute le <hi>r</hi> à <hi>abres</hi>, tout comme une lettre illisible au mot <hi>bienz</hi>.</witDetail></app>
-</p> 
-</div>
-<div type="paragraph" n="2" xml:id="TrotulaPr1M_prologue_2">
-<label>[2]</label> 
-    <p>Mais pour ce ke les femes sunt <app><rdgGrp><lem wit="#S #N"><app><lem wit="#N">de plus fieble nature et</lem><rdg wit="#S" cause="homoteuloton"/></app> de plus fieble qualité ke li ome</lem></rdgGrp><rdg wit="#W">mes por ce que les femes</rdg><witDetail wit="#W"><hi>ont le cors plus froit que les homes</hi> ajouté dans la marge gauche par une autre main (la même qui avait déjà corrigé le texte au f. précédent).</witDetail></app> et ount <!-- VM : à voir s'il ne vaut mieux utiliser une typologie de valeurs plus fines pour les fautes de copie, cf. Roncaglia--> greignor travail <app><lem wit="#N">d’enfanter</lem><rdg wit="#S">d'enfant</rdg></app> <app><rdgGrp><lem wit="#S #N">pour ce <app><lem wit="#N">que</lem><rdg wit="#S"/></app></lem></rdgGrp><rdg wit="#W">si</rdg></app> lor avienent <app><lem wit="#S #N">plusors</lem><rdg wit="#W"/></app> enfermetez <app><rdgGrp><lem wit="#S #N">ke as homes <app><lem wit="#S"/><rdg wit="#N">ne font</rdg></app></lem></rdgGrp><rdg wit="#W">au femelles plus qu'as maales</rdg></app>, et maiesmement à cels <app><lem wit="#S #N">membres</lem><rdg wit="#W"/></app> ki à l’engedreure <app><lem wit="#N">apenent</lem><rdg wit="#S">apertienenet</rdg><rdg wit="#W">apertient</rdg></app> <!-- agn. N (apenent) -->. Et pour ce ke femes sunt <app><lem wit="#S #N">plus</lem><rdg wit="#W"/></app> huntoses <app><rdgGrp><lem wit="#S #N">de dire lor <app><lem wit="#S">enfermetez</lem><rdg wit="#N">maus</rdg></app> as homes ke as femes, si lor faz icest livre en language ke eles l’entendent, que les unes sachent les altres aidier. Bien sachent que je i met del mielz ke <app><lem wit="#N">apent à</lem><rdg wit="#S"/></app> lor besoigne à lor enfermetez.</lem></rdgGrp><rdg wit="#W">de leur et desconvenne dire plus que les homes, <!--  agn. W (e fet)  --> e fet ce livre à savoir si comme nous commençames que vos meismes savroiz as autres aider.</rdg></app>  <app><lem wit="#N">Car jeo ai overé et trové eu livres <!-- VM : à voir si on fait de la réfection ling. J'en ferai pas car cela ne me dérange pas d'avoir un texte encore plus agn. qui pourrait même être plus proche de l'archétype, qui est certainement agn. --></lem><rdg wit="#S">que je ai trouvé des diz</rdg><rdg wit="#W">Et sachiez que j'en ei ajousté ce que</rdg></app> <persName>Ypocras</persName><app><rdgGrp><lem wit="#S #N"></lem></rdgGrp><rdg wit="#W">en dites</rdg></app> et <persName>Galien</persName> <app><rdgGrp><lem wit="#S #N">et <persName>Costentin</persName> et <persName>Cleopatras</persName></lem><rdg wit="#W">et <persName>Dyopatre</persName> et <persName>Oribasie</persName></rdg></rdgGrp></app>  <app><lem wit="#N">et <persName>Diascorides</persName> et <persName>Almasor</persName> e <persName>Apollo</persName> e <persName>Platearie</persName> et <persName>Rogerine</persName></lem><rdg wit="#S"/><rdg wit="#W">et <persName>Dyacondes</persName> et <persName>Constentin</persName></rdg></app>. <app><rdgGrp><lem wit="#S #N">Et ici trouveront dont li mal <pb n="247r"/><cb n="a"/> vienent et comant <app><lem wit="#N">les garrez</lem><rdg wit="#S">porront guarir</rdg></app></lem></rdgGrp><rdg wit="#W">Si troverez comment les maus i vienent et comment vos les connoistret <!-- agn. W (connoistret)--> et comment voz les guarirez</rdg></app>.</p>
-</div>
-</div>
-</body>
-<back>
- <!-- *revoir - à voir si on peut (et si c'est la peine) d'ajouter un petit glossaire dans le back ? -->
-</back>
+    </body>
+    <back>
+       <!-- *revoir - à voir si on peut (et si c'est la peine) d'ajouter un petit glossaire dans le back ? -->
+   </back>
 </text>
 </TEI>
