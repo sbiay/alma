@@ -16,14 +16,12 @@ def tokeniser(fichier):
 	# - rdg : pas sûr
 	lem = xml.xpath("//tei:lem", namespaces=nsmap)
 	ps = xml.xpath("//tei:text//tei:body//tei:p/text()", namespaces=nsmap)
-	ps2 = xml.xpath("//tei:text//tei:body//tei:p", namespaces=nsmap)
 	nlp = spacy.load("fr_core_news_sm")
 	
-	# Pour le contenu des éléments p, ils forment une seule liste que l'on reforme en chaine
+	# Pour le contenu des éléments p qui est mixte
 	if ps:
 		# On boucle sur chaque partie des éléments p
 		for index, p in enumerate(ps):
-			#print(p)
 			doc = nlp(str(p))
 			ligne = [token.text for token in doc]
 			chaine = ""
@@ -31,19 +29,11 @@ def tokeniser(fichier):
 			for token in ligne:
 				if token != " " and token:
 					chaine = f"{chaine}<w>{token}</w>"
-			#print(p)
-			#print(chaine)
-			ps[index] =  chaine
-		#	if index == 0:
-		#		print(ligne)
-		#		chaine = ""
-				# On boucle sur chaque token de la ligne
-				#for token in ligne:
-				#	chaine = f"{chaine}<w>{token}</w>"
-				# On remplace le contenu de l'élément par la chaine tokénisée
-				#n.text = chaine
+			# ps[index] est ce que l'on veut remplacer
+			# chaine est ce par quoi on veut le remplacer
 
 	"""
+	# Pour les éléments dont le contenu est non mixte, comme lem
 	for index, n in enumerate(lem):
 		if n.text:
 			doc = nlp(n.text)
@@ -59,7 +49,7 @@ def tokeniser(fichier):
 
 	sortie = fichier.replace(".xml", "-token.xml")
 	# On écrit le fichier TEI de sortie
-	xml.write(sortie, encoding="utf8")
+	xml.write(sortie, encoding="utf8", pretty_print=True)
 
 	# On ouvre le fichier TEI au format txt
 	with open(sortie) as f:
