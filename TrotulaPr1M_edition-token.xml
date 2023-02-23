@@ -294,11 +294,401 @@
                 <div type="paragraph" n="1" xml:id="TrotulaPr1M_prologue_1">
                     <label>[1]</label>
                     <p><pb n="246v"/><cb n="b"/>
-                    <app><lem wit="#N #W"/><rdg wit="#S">Quant</rdg></app> Dex nostre seignor, <app><lem wit="#N #W">quant il</lem><rdg wit="#S"/></app> out le <app><lem wit="#S #N">mund</lem><rdg wit="#W">secle</rdg></app> estoré, <app><lem wit="#N #W">et</lem><rdg wit="#S"/></app> <app><lem wit="#S #N">sor tote creature</lem><rdg wit="#W">les autres creatures</rdg></app> <app><lem wit="#S #N">si</lem><rdg wit="#W">/</rdg></app> fist home <app><lem wit="#S #N">raisnable</lem><rdg wit="#W">remuable</rdg></app>, <app><lem wit="#S #N">puis</lem><rdg wit="#W">si</rdg></app> li dona seignorie de totes terrienes choses, si <app><lem wit="#S #N"/><rdg wit="#W">le</rdg></app> commanda à <app><lem wit="#S">creistre</lem><rdg wit="#N">estre</rdg><rdg wit="#W">conoistre</rdg></app> <choice><sic>et</sic><corr/></choice> et à mouteplier <app><lem wit="#S #N"/><rdg wit="#W">home et fame</rdg></app>. Et establi <app><lem wit="#S #N"/><rdg wit="#W">que d'home et fame istroit fruit et</rdg><witDetail wit="#W">ajout interlinaire <hi>fruit</hi> rédigé par une autre main</witDetail></app> ke des deus vendreit le tierz, <app><lem wit="#S #N">et del cors de l’home</lem><rdg wit="#W">premierement dou cors à l'omme</rdg></app>, qui plus est de chaude nature <app><rdgGrp><lem wit="#S #N"><app><lem wit="#S">et deseché, istreit la semence en la feme</lem> <rdg wit="#N">et de lui istereit la semence. E la f.</rdg></app>, ke plus est de freide nature, et de mole la <app><lem wit="#N">recovreit</lem><rdg wit="~#S">reouvreit</rdg></app>, <app><lem wit="#S"/><rdg wit="#N">el comencement meismes est medlé la semence de la femme od la semence de l'home</rdg></app> et par l'atemprement del chalt et del freit et del sec et del moiste <app><lem wit="#S"/><rdg wit="#N">est li germes alevez et creist li e.</rdg></app> creistreit li enfes. Ices quatre choses sunt necessaire ad herbes et as arbres et as blez.</lem></rdgGrp><rdg wit="#W"> istroit la semence et por l'atemprement dou chaut et dou froiz, c'est à savoir de la chalour de l'omme et de la froidor de la famme et dou sec et dou moillié sunt les .iiij. humors, le chaut et le froit, et le sec et le moillié, craist li enfes, si come nous n'oion de ces <sic>abres</sic> et de ces bienz qui ne ci dis sent mie bien sanz l'atrempement de ces .iiij. humeurs. </rdg><witDetail wit="#W">ajout interlinéaire par une autre main qui corrige le <hi>z</hi> de <hi>froiz</hi> en <hi>t</hi>, ajoute le <hi>r</hi> à <hi>abres</hi>, tout comme une lettre illisible au mot <hi>bienz</hi>.</witDetail></app></p> 
+<app>
+<lem wit="#N #W"/><rdg wit="#S">Quant</rdg>
+</app>
+
+<w>Dex</w>
+<w>nostre</w>
+<w>seignor</w>
+<w>,</w>
+<app>
+<lem wit="#N #W">
+<w>quant</w>
+<w>il</w>
+</lem>
+<rdg wit="#S"/>
+</app>
+
+<w>out</w>
+<w>le</w>
+<app>
+<lem wit="#S #N">
+<w>mund</w>
+</lem>
+<rdg wit="#W">secle</rdg>
+</app>
+
+<w>estoré</w>
+<w>,</w>
+<app>
+<lem wit="#N #W">
+<w>et</w>
+</lem>
+<rdg wit="#S"/>
+</app>
+<app>
+<lem wit="#S #N">
+<w>sor</w>
+<w>tote</w>
+<w>creature</w>
+</lem>
+<rdg wit="#W">les autres creatures</rdg>
+</app>
+<app>
+<lem wit="#S #N">
+<w>si</w>
+</lem>
+<rdg wit="#W">/</rdg>
+</app>
+
+<w>fist</w>
+<w>home</w>
+<app>
+<lem wit="#S #N">
+<w>raisnable</w>
+</lem>
+<rdg wit="#W">remuable</rdg>
+</app>
+, 
+<app>
+<lem wit="#S #N">
+<w>puis</w>
+</lem>
+<rdg wit="#W">si</rdg>
+</app>
+
+<w>li</w>
+<w>dona</w>
+<w>seignorie</w>
+<w>de</w>
+<w>totes</w>
+<w>terrienes</w>
+<w>choses</w>
+<w>,</w>
+<w>si</w>
+<app>
+<lem wit="#S #N"/><rdg wit="#W">le</rdg>
+</app>
+
+<w>commanda</w>
+<w>à</w>
+<app>
+<lem wit="#S">
+<w>creistre</w>
+</lem>
+<rdg wit="#N">estre</rdg><rdg wit="#W">conoistre</rdg>
+</app>
+ <choice><sic>et</sic><corr/></choice> et à mouteplier 
+<app>
+<lem wit="#S #N"/><rdg wit="#W">home et fame</rdg>
+</app>
+. Et establi 
+<app>
+<lem wit="#S #N"/><rdg wit="#W">que d'home et fame istroit fruit et</rdg><witDetail wit="#W">ajout interlinaire <hi>fruit</hi> rédigé par une autre main</witDetail>
+</app>
+
+<w>ke</w>
+<w>des</w>
+<w>deus</w>
+<w>vendreit</w>
+<w>le</w>
+<w>tierz</w>
+<w>,</w>
+<app>
+<lem wit="#S #N">
+<w>et</w>
+<w>del</w>
+<w>cors</w>
+<w>de</w>
+<w>l’</w>
+<w>home</w>
+</lem>
+<rdg wit="#W">premierement dou cors à l'omme</rdg>
+</app>
+, qui plus est de chaude nature 
+<app><rdgGrp>
+<lem wit="#S #N">
+<app>
+<lem wit="#S">
+<w>et</w>
+<w>deseché</w>
+<w>,</w>
+<w>istreit</w>
+<w>la</w>
+<w>semence</w>
+<w>en</w>
+<w>la</w>
+<w>feme</w>
+</lem>
+ <rdg wit="#N">et de lui istereit la semence. E la f.</rdg>
+</app>
+, ke plus est de freide nature, et de mole la 
+<app>
+<lem wit="#N">
+<w>recovreit</w>
+</lem>
+<rdg wit="~#S">reouvreit</rdg>
+</app>
+, 
+<app>
+<lem wit="#S"/><rdg wit="#N">el comencement meismes est medlé la semence de la femme od la semence de l'home</rdg>
+</app>
+
+<w>et</w>
+<w>par</w>
+<w>l'</w>
+<w>atemprement</w>
+<w>del</w>
+<w>chalt</w>
+<w>et</w>
+<w>del</w>
+<w>freit</w>
+<w>et</w>
+<w>del</w>
+<w>sec</w>
+<w>et</w>
+<w>del</w>
+<w>moiste</w>
+<app>
+<lem wit="#S"/><rdg wit="#N">est li germes alevez et creist li e.</rdg>
+</app>
+
+<w>creistreit</w>
+<w>li</w>
+<w>enfes</w>
+<w>.</w>
+<w>Ices</w>
+<w>quatre</w>
+<w>choses</w>
+<w>sunt</w>
+<w>necessaire</w>
+<w>ad</w>
+<w>herbes</w>
+<w>et</w>
+<w>as</w>
+<w>arbres</w>
+<w>et</w>
+<w>as</w>
+<w>blez</w>
+<w>.</w>
+</lem>
+</rdgGrp><rdg wit="#W"> istroit la semence et por l'atemprement dou chaut et dou froiz, c'est à savoir de la chalour de l'omme et de la froidor de la famme et dou sec et dou moillié sunt les .iiij. humors, le chaut et le froit, et le sec et le moillié, craist li enfes, si come nous n'oion de ces <sic>abres</sic> et de ces bienz qui ne ci dis sent mie bien sanz l'atrempement de ces .iiij. humeurs. </rdg><witDetail wit="#W">ajout interlinéaire par une autre main qui corrige le <hi>z</hi> de <hi>froiz</hi> en <hi>t</hi>, ajoute le <hi>r</hi> à <hi>abres</hi>, tout comme une lettre illisible au mot <hi>bienz</hi>.</witDetail>
+</app>
+</p> 
             </div>
             <div type="paragraph" n="2" xml:id="TrotulaPr1M_prologue_2">
                 <label>[2]</label> 
-                <p>Mais pour ce ke les femes sunt <app><rdgGrp><lem wit="#S #N"><app><lem wit="#N">de plus fieble nature et</lem><rdg wit="#S" cause="homoteuloton"/></app> de plus fieble qualité ke li ome</lem></rdgGrp><rdg wit="#W">mes por ce que les femes</rdg><witDetail wit="#W"><hi>ont le cors plus froit que les homes</hi> ajouté dans la marge gauche par une autre main (la même qui avait déjà corrigé le texte au f. précédent).</witDetail></app> et ount <!-- VM : à voir s'il ne vaut mieux utiliser une typologie de valeurs plus fines pour les fautes de copie, cf. Roncaglia--> greignor travail <app><lem wit="#N">d’enfanter</lem><rdg wit="#S">d'enfant</rdg></app> <app><rdgGrp><lem wit="#S #N">pour ce <app><lem wit="#N">que</lem><rdg wit="#S"/></app></lem></rdgGrp><rdg wit="#W">si</rdg></app> lor avienent <app><lem wit="#S #N">plusors</lem><rdg wit="#W"/></app> enfermetez <app><rdgGrp><lem wit="#S #N">ke as homes <app><lem wit="#S"/><rdg wit="#N">ne font</rdg></app></lem></rdgGrp><rdg wit="#W">au femelles plus qu'as maales</rdg></app>, et maiesmement à cels <app><lem wit="#S #N">membres</lem><rdg wit="#W"/></app> ki à l’engedreure <app><lem wit="#N">apenent</lem><rdg wit="#S">apertienenet</rdg><rdg wit="#W">apertient</rdg></app><!-- agn. N (apenent) -->. Et pour ce ke femes sunt <app><lem wit="#S #N">plus</lem><rdg wit="#W"/></app>huntoses <app><rdgGrp><lem wit="#S #N">de dire lor <app><lem wit="#S">enfermetez</lem><rdg wit="#N">maus</rdg></app> as homes ke as femes, si lor faz icest livre en language ke eles l’entendent, que les unes sachent les altres aidier. Bien sachent que je i met del mielz ke <app><lem wit="#N">apent à</lem><rdg wit="#S"/></app> lor besoigne à lor enfermetez.</lem></rdgGrp><rdg wit="#W">de leur et desconvenne dire plus que les homes, <!--  agn. W (e fet)  --> e fet ce livre à savoir si comme nous commençames que vos meismes savroiz as autres aider.</rdg></app>  <app><lem wit="#N">Car jeo ai overé et trové eu livres <!-- VM : à voir si on fait de la réfection ling. J'en ferai pas car cela ne me dérange pas d'avoir un texte encore plus agn. qui pourrait même être plus proche de l'archétype, qui est certainement agn. --></lem><rdg wit="#S">que je ai trouvé des diz</rdg><rdg wit="#W">Et sachiez que j'en ei ajousté ce que</rdg></app> <persName>Ypocras</persName><app><rdgGrp><lem wit="#S #N"/></rdgGrp><rdg wit="#W">en dites</rdg></app> et <persName>Galien</persName> <app><rdgGrp><lem wit="#S #N">et <persName>Costentin</persName> et <persName>Cleopatras</persName></lem><rdg wit="#W">et <persName>Dyopatre</persName> et <persName>Oribasie</persName></rdg></rdgGrp></app>  <app><lem wit="#N">et <persName>Diascorides</persName> et <persName>Almasor</persName> e <persName>Apollo</persName> e <persName>Platearie</persName> et <persName>Rogerine</persName></lem><rdg wit="#S"/><rdg wit="#W">et <persName>Dyacondes</persName> et <persName>Constentin</persName></rdg></app>. <app><rdgGrp><lem wit="#S #N">Et ici trouveront dont li mal <pb n="247r"/><cb n="a"/> vienent et comant <app><lem wit="#N">les garrez</lem><rdg wit="#S">porront guarir</rdg></app></lem></rdgGrp><rdg wit="#W">Si troverez comment les maus i vienent et comment vos les connoistret <!-- agn. W (connoistret)--> et comment voz les guarirez</rdg></app>.</p>
+                <p>Mais pour ce ke les femes sunt 
+<app><rdgGrp>
+<lem wit="#S #N">
+<app>
+<lem wit="#N">
+<w>de</w>
+<w>plus</w>
+<w>fieble</w>
+<w>nature</w>
+<w>et</w>
+</lem>
+<rdg wit="#S" cause="homoteuloton"/>
+</app>
+
+<w>de</w>
+<w>plus</w>
+<w>fieble</w>
+<w>qualité</w>
+<w>ke</w>
+<w>li</w>
+<w>ome</w>
+</lem>
+</rdgGrp><rdg wit="#W">mes por ce que les femes</rdg><witDetail wit="#W"><hi>ont le cors plus froit que les homes</hi> ajouté dans la marge gauche par une autre main (la même qui avait déjà corrigé le texte au f. précédent).</witDetail>
+</app>
+ et ount <!-- VM : à voir s'il ne vaut mieux utiliser une typologie de valeurs plus fines pour les fautes de copie, cf. Roncaglia--> greignor travail 
+<app>
+<lem wit="#N">
+<w>d’</w>
+<w>enfanter</w>
+</lem>
+<rdg wit="#S">d'enfant</rdg>
+</app>
+<app><rdgGrp>
+<lem wit="#S #N">
+<w>pour</w>
+<w>ce</w>
+<app>
+<lem wit="#N">
+<w>que</w>
+</lem>
+<rdg wit="#S"/>
+</app>
+
+</lem>
+</rdgGrp><rdg wit="#W">si</rdg>
+</app>
+
+<w>lor</w>
+<w>avienent</w>
+<app>
+<lem wit="#S #N">
+<w>plusors</w>
+</lem>
+<rdg wit="#W"/>
+</app>
+
+<w>enfermetez</w>
+<app><rdgGrp>
+<lem wit="#S #N">
+<w>ke</w>
+<w>as</w>
+<w>homes</w>
+<app>
+<lem wit="#S"/><rdg wit="#N">ne font</rdg>
+</app>
+
+</lem>
+</rdgGrp><rdg wit="#W">au femelles plus qu'as maales</rdg>
+</app>
+, et maiesmement à cels 
+<app>
+<lem wit="#S #N">
+<w>membres</w>
+</lem>
+<rdg wit="#W"/>
+</app>
+
+<w>ki</w>
+<w>à</w>
+<w>l’</w>
+<w>engedreure</w>
+<app>
+<lem wit="#N">
+<w>apenent</w>
+</lem>
+<rdg wit="#S">apertienenet</rdg><rdg wit="#W">apertient</rdg>
+</app>
+<!-- agn. N (apenent) -->. Et pour ce ke femes sunt 
+<app>
+<lem wit="#S #N">
+<w>plus</w>
+</lem>
+<rdg wit="#W"/>
+</app>
+huntoses 
+<app><rdgGrp>
+<lem wit="#S #N">
+<w>de</w>
+<w>dire</w>
+<w>lor</w>
+<app>
+<lem wit="#S">
+<w>enfermetez</w>
+</lem>
+<rdg wit="#N">maus</rdg>
+</app>
+
+<w>as</w>
+<w>homes</w>
+<w>ke</w>
+<w>as</w>
+<w>femes</w>
+<w>,</w>
+<w>si</w>
+<w>lor</w>
+<w>faz</w>
+<w>icest</w>
+<w>livre</w>
+<w>en</w>
+<w>language</w>
+<w>ke</w>
+<w>eles</w>
+<w>l’</w>
+<w>entendent</w>
+<w>,</w>
+<w>que</w>
+<w>les</w>
+<w>unes</w>
+<w>sachent</w>
+<w>les</w>
+<w>altres</w>
+<w>aidier</w>
+<w>.</w>
+<w>Bien</w>
+<w>sachent</w>
+<w>que</w>
+<w>je</w>
+<w>i</w>
+<w>met</w>
+<w>del</w>
+<w>mielz</w>
+<w>ke</w>
+<app>
+<lem wit="#N">
+<w>apent</w>
+<w>à</w>
+</lem>
+<rdg wit="#S"/>
+</app>
+
+<w>lor</w>
+<w>besoigne</w>
+<w>à</w>
+<w>lor</w>
+<w>enfermetez</w>
+<w>.</w>
+</lem>
+</rdgGrp><rdg wit="#W">de leur et desconvenne dire plus que les homes, <!--  agn. W (e fet)  --> e fet ce livre à savoir si comme nous commençames que vos meismes savroiz as autres aider.</rdg>
+</app>
+<app>
+<lem wit="#N">
+<w>Car</w>
+<w>jeo</w>
+<w>ai</w>
+<w>overé</w>
+<w>et</w>
+<w>trové</w>
+<w>eu</w>
+<w>livres</w><!-- VM : à voir si on fait de la réfection ling. J'en ferai pas car cela ne me dérange pas d'avoir un texte encore plus agn. qui pourrait même être plus proche de l'archétype, qui est certainement agn. -->
+</lem>
+<rdg wit="#S">que je ai trouvé des diz</rdg><rdg wit="#W">Et sachiez que j'en ei ajousté ce que</rdg>
+</app>
+ <persName>Ypocras</persName>
+<app><rdgGrp>
+<lem wit="#S #N"/></rdgGrp><rdg wit="#W">en dites</rdg>
+</app>
+ et <persName>Galien</persName> 
+<app><rdgGrp>
+<lem wit="#S #N">
+<w>et</w><persName>Costentin</persName> et <persName>Cleopatras</persName>
+</lem>
+<rdg wit="#W">et <persName>Dyopatre</persName> et <persName>Oribasie</persName></rdg></rdgGrp>
+</app>
+<app>
+<lem wit="#N">
+<w>et</w><persName>Diascorides</persName> et <persName>Almasor</persName> e <persName>Apollo</persName> e <persName>Platearie</persName> et <persName>Rogerine</persName>
+</lem>
+<rdg wit="#S"/><rdg wit="#W">et <persName>Dyacondes</persName> et <persName>Constentin</persName></rdg>
+</app>
+. 
+<app><rdgGrp>
+<lem wit="#S #N">
+<w>Et</w>
+<w>ici</w>
+<w>trouveront</w>
+<w>dont</w>
+<w>li</w>
+<w>mal</w><pb n="247r"/><cb n="a"/> vienent et comant 
+<app>
+<lem wit="#N">
+<w>les</w>
+<w>garrez</w>
+</lem>
+<rdg wit="#S">porront guarir</rdg>
+</app>
+
+</lem>
+</rdgGrp><rdg wit="#W">Si troverez comment les maus i vienent et comment vos les connoistret <!-- agn. W (connoistret)--> et comment voz les guarirez</rdg>
+</app>
+.</p>
             </div>
         </div>
     </body>

@@ -9,8 +9,10 @@ subtitle: Feulle de route
 
 	- Impossible à gérer par py pour les chaînes des éléments `p` en raison de leur contenu mixte
 	
-	- On remplace en mode texte tous les segments ou mots rencontrés dans les p
-	- Puis on supprime les éléments `w` partout où ne les souhaite pas
+	- On réindente
+		- Les `p` pour pouvoir parser seulement dedans
+		- Les `app` ont toujours un saut de ligne avant et un saut de ligne après
+		- Les `lem` fermant on un saut de ligne après
 
 	- xslt…
 
