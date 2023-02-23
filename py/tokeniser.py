@@ -63,15 +63,16 @@ def tokeniser(fichier):
 	# On indente les lem en sautant un ligne avant et après
 	contenu = re.sub("([^\n])<lem", r"\1\n<lem", contenu)
 	contenu = re.sub("</lem>([^\n])", r"\n</lem>\n\1", contenu)
-	# On supprime les lignes vides
 	contenu = re.sub("\n +\n", r"\n", contenu)
+	# On supprime les sauts de ligne
+	contenu = re.sub("\n\n", r"\n", contenu)
 
 	nouvContenu = []
 	contenu = contenu.split("\n")
 	body = False
 	p = False
 	for ligne in contenu:
-		# Seules les lignes qui ne commencent pas par une balise sont à tokéniser
+		# On détermine si l'on se trouve dans le body et dans les p
 		if "<body>" in ligne:
 			body = True
 		elif "</body>" in ligne:
@@ -82,7 +83,8 @@ def tokeniser(fichier):
 			p = False
 		# On ne travaille que dans les p du body
 		if body and p:
-			if re.search("^ +[^ \<]", ligne):
+			# Seules les lignes qui ne commencent pas par une balise sont à tokéniser
+			if re.search("^ *[^ \<]", ligne):
 				if not "<" in ligne:
 					doc = nlp(ligne)
 					ligne = [token.text for token in doc]
@@ -91,7 +93,12 @@ def tokeniser(fichier):
 					for token in ligne:
 						if token and token != " ":
 							chaine = f"{chaine}\n<w>{token}</w>"	
+					# On supprime le premier saut de ligne, inutile
+					if chaine[0] == "\n":
+						chaine = chaine[1:]
 					ligne = chaine
+				else:
+					print("Non traité : " + ligne)
 		nouvContenu.append(ligne)
 	contenu = "\n".join(nouvContenu)
 

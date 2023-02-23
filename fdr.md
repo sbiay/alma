@@ -8,13 +8,11 @@ subtitle: Feulle de route
 1. On applique les balises `w` sur tous les éléments tokénisés
 
 	- Impossible à gérer par py pour les chaînes des éléments `p` en raison de leur contenu mixte
+	- xslt… aurait été compliqué
 	
-	- On réindente
-		- Les `p` pour pouvoir parser seulement dedans
-		- Les `app` ont toujours un saut de ligne avant et un saut de ligne après
-		- Les `lem` fermant on un saut de ligne après
-
-	- xslt…
+	- **Manipulation du code**
+		- Traiter la question des balises internes aux `p` (et qui peuvent intervenir potentiellement dans les `lem`)
+		- Placer les remarques <!----> après un retour à la ligne
 
 2. On récolte tous les éléments `w` du document
 

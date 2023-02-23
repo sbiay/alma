@@ -297,7 +297,6 @@
 <app>
 <lem wit="#N #W"/><rdg wit="#S">Quant</rdg>
 </app>
-
 <w>Dex</w>
 <w>nostre</w>
 <w>seignor</w>
@@ -309,7 +308,6 @@
 </lem>
 <rdg wit="#S"/>
 </app>
-
 <w>out</w>
 <w>le</w>
 <app>
@@ -318,7 +316,6 @@
 </lem>
 <rdg wit="#W">secle</rdg>
 </app>
-
 <w>estoré</w>
 <w>,</w>
 <app>
@@ -341,7 +338,6 @@
 </lem>
 <rdg wit="#W">/</rdg>
 </app>
-
 <w>fist</w>
 <w>home</w>
 <app>
@@ -350,14 +346,13 @@
 </lem>
 <rdg wit="#W">remuable</rdg>
 </app>
-, 
+<w>,</w>
 <app>
 <lem wit="#S #N">
 <w>puis</w>
 </lem>
 <rdg wit="#W">si</rdg>
 </app>
-
 <w>li</w>
 <w>dona</w>
 <w>seignorie</w>
@@ -370,7 +365,6 @@
 <app>
 <lem wit="#S #N"/><rdg wit="#W">le</rdg>
 </app>
-
 <w>commanda</w>
 <w>à</w>
 <app>
@@ -383,11 +377,12 @@
 <app>
 <lem wit="#S #N"/><rdg wit="#W">home et fame</rdg>
 </app>
-. Et establi 
+<w>.</w>
+<w>Et</w>
+<w>establi</w>
 <app>
 <lem wit="#S #N"/><rdg wit="#W">que d'home et fame istroit fruit et</rdg><witDetail wit="#W">ajout interlinaire <hi>fruit</hi> rédigé par une autre main</witDetail>
 </app>
-
 <w>ke</w>
 <w>des</w>
 <w>deus</w>
@@ -406,7 +401,13 @@
 </lem>
 <rdg wit="#W">premierement dou cors à l'omme</rdg>
 </app>
-, qui plus est de chaude nature 
+<w>,</w>
+<w>qui</w>
+<w>plus</w>
+<w>est</w>
+<w>de</w>
+<w>chaude</w>
+<w>nature</w>
 <app><rdgGrp>
 <lem wit="#S #N">
 <app>
@@ -423,18 +424,28 @@
 </lem>
  <rdg wit="#N">et de lui istereit la semence. E la f.</rdg>
 </app>
-, ke plus est de freide nature, et de mole la 
+<w>,</w>
+<w>ke</w>
+<w>plus</w>
+<w>est</w>
+<w>de</w>
+<w>freide</w>
+<w>nature</w>
+<w>,</w>
+<w>et</w>
+<w>de</w>
+<w>mole</w>
+<w>la</w>
 <app>
 <lem wit="#N">
 <w>recovreit</w>
 </lem>
 <rdg wit="~#S">reouvreit</rdg>
 </app>
-, 
+<w>,</w>
 <app>
 <lem wit="#S"/><rdg wit="#N">el comencement meismes est medlé la semence de la femme od la semence de l'home</rdg>
 </app>
-
 <w>et</w>
 <w>par</w>
 <w>l'</w>
@@ -453,7 +464,6 @@
 <app>
 <lem wit="#S"/><rdg wit="#N">est li germes alevez et creist li e.</rdg>
 </app>
-
 <w>creistreit</w>
 <w>li</w>
 <w>enfes</w>
@@ -492,7 +502,6 @@
 </lem>
 <rdg wit="#S" cause="homoteuloton"/>
 </app>
-
 <w>de</w>
 <w>plus</w>
 <w>fieble</w>
@@ -521,11 +530,9 @@
 </lem>
 <rdg wit="#S"/>
 </app>
-
 </lem>
 </rdgGrp><rdg wit="#W">si</rdg>
 </app>
-
 <w>lor</w>
 <w>avienent</w>
 <app>
@@ -534,7 +541,6 @@
 </lem>
 <rdg wit="#W"/>
 </app>
-
 <w>enfermetez</w>
 <app><rdgGrp>
 <lem wit="#S #N">
@@ -544,18 +550,20 @@
 <app>
 <lem wit="#S"/><rdg wit="#N">ne font</rdg>
 </app>
-
 </lem>
 </rdgGrp><rdg wit="#W">au femelles plus qu'as maales</rdg>
 </app>
-, et maiesmement à cels 
+<w>,</w>
+<w>et</w>
+<w>maiesmement</w>
+<w>à</w>
+<w>cels</w>
 <app>
 <lem wit="#S #N">
 <w>membres</w>
 </lem>
 <rdg wit="#W"/>
 </app>
-
 <w>ki</w>
 <w>à</w>
 <w>l’</w>
@@ -573,7 +581,7 @@
 </lem>
 <rdg wit="#W"/>
 </app>
-huntoses 
+<w>huntoses</w>
 <app><rdgGrp>
 <lem wit="#S #N">
 <w>de</w>
@@ -585,7 +593,6 @@ huntoses
 </lem>
 <rdg wit="#N">maus</rdg>
 </app>
-
 <w>as</w>
 <w>homes</w>
 <w>ke</w>
@@ -628,7 +635,6 @@ huntoses
 </lem>
 <rdg wit="#S"/>
 </app>
-
 <w>lor</w>
 <w>besoigne</w>
 <w>à</w>
@@ -668,7 +674,7 @@ huntoses
 </lem>
 <rdg wit="#S"/><rdg wit="#W">et <persName>Dyacondes</persName> et <persName>Constentin</persName></rdg>
 </app>
-. 
+<w>.</w>
 <app><rdgGrp>
 <lem wit="#S #N">
 <w>Et</w>
@@ -684,7 +690,6 @@ huntoses
 </lem>
 <rdg wit="#S">porront guarir</rdg>
 </app>
-
 </lem>
 </rdgGrp><rdg wit="#W">Si troverez comment les maus i vienent et comment vos les connoistret <!-- agn. W (connoistret)--> et comment voz les guarirez</rdg>
 </app>
