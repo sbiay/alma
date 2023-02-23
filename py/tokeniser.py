@@ -1,5 +1,6 @@
 import click
 import spacy
+import regex as re
 
 from lxml import etree
 
@@ -22,6 +23,24 @@ def tokeniser(fichier):
 			doc = nlp(n.text)
 			ligne = [token.text for token in doc]
 			if index == 32:
-				print(ligne)
+				chaine = ""
+				# On boucle sur chaque token de la ligne
+				for token in ligne:
+					chaine = f"{chaine}<w>{token}</w>"
+				# On remplace le contenu de l'élément par la chaine tokénisée
+				n.text = chaine
+
+	sortie = fichier.replace(".xml", "-token.xml")
+	# On écrit le fichier TEI de sortie
+	xml.write(sortie, encoding="utf8")
+
+	# On ouvre le fichier TEI au format txt
+	with open(sortie) as f:
+		contenu = f.read()
+
+	contenu = re.sub("&lt;([\/]?)w&gt;", r"<\1w>", contenu)
+
+	with open(sortie, mode="w") as f:
+		f.write(contenu)
 
 tokeniser()
