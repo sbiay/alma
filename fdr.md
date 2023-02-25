@@ -3,7 +3,7 @@ title: Alma
 subtitle: Feulle de route
 ---
 
-# Tokéniser les textes
+# Tokéniser les éditions TEI
 
 1. On applique les balises `w` sur tous les éléments tokénisés (y compris la ponctuation de façon provisoire)
 

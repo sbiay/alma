@@ -29,7 +29,9 @@ python3 py/tokeniser.py TEI.xml
 
 On applique les balises `w` sur tous les éléments à tokéniser (y compris la ponctuation de façon provisoire).
 
-Comme il est impossible de gérer par py pour les chaînes des éléments `p` en raison de leur contenu mixte, et que l'on souhaite éviter de recourir à XSLT en raison de la difficulté de prise en main. On manipule le code par script python.
+Comme on n'a pas réussi à gérer avec **lxml** les éléments `p` en raison de leur contenu mixte, et que l'on souhaite éviter de recourir à **XSLT** en raison de la difficulté de prise en main, on manipule le code par script python, avec lxml pour les éléments ne contenant que du texte et en mode texte pour les éléments mixtes, et ce après rectification de l'indentation.
+
+Exemple de résultat [ici](./tei/TrotulaPr1M_edition-token.xml).
 
 Eléments par encore traités par le script :
 
