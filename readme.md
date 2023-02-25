@@ -1,12 +1,10 @@
-title: Alma
+Alma
 ====
 
 Plan :
-
 1. [Lemmatisation et enrichissement morpho-syntaxique](#t1)
 	1. [Tokénisation des éditions TEI ⌛](#t1-1)
 	2. [Export des mots et de la ponctuation](#t1-2)
-
 [comment]: <> (FINET)
 
 
