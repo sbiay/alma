@@ -5,6 +5,7 @@ Plan :
 1. [Lemmatisation et enrichissement morpho-syntaxique](#t1)
 	1. [Tokénisation des éditions TEI ⌛](#t1-1)
 	2. [Export des mots et de la ponctuation](#t1-2)
+
 [comment]: <> (FINET)
 
 
@@ -14,6 +15,12 @@ Ce dépôt est dédié à l'ingénierie des données et des textes du projet **A
 <a id='t1'/>
 
 # Lemmatisation et enrichissement morpho-syntaxique
+
+Mode d'emploi :
+
+```shell
+python3 py/tokeniser.py TEI.xml
+```
 
 
 <a id='t1-1'/>
