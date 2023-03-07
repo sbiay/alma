@@ -3,7 +3,7 @@ Alma
 
 Plan :
 1. [Lemmatisation et enrichissement morpho-syntaxique](#t1)
-	1. [Tokénisation des éditions TEI ⌛](#t1-1)
+	1. [Tokénisation des éditions TEI ](#t1-1)
 	2. [Export des mots et de la ponctuation](#t1-2)
 
 [comment]: <> (FINET)
@@ -25,7 +25,7 @@ python3 py/tokeniser.py TEI.xml
 
 <a id='t1-1'/>
 
-## Tokénisation des éditions TEI ⌛
+## Tokénisation des éditions TEI 👍
 
 On applique les balises `w` sur tous les éléments à tokéniser (y compris la ponctuation de façon provisoire).
 
@@ -33,15 +33,9 @@ Comme on n'a pas réussi à gérer avec **lxml** les éléments `p` en raison de
 
 Exemple de résultat [ici](./tei/TrotulaPr1M_edition-token.xml).
 
-Eléments par encore traités par le script :
+**Questions** :
 
-```xml
-<p>Mais pour ce ke les femes sunt 
-<choice><sic>et</sic><corr/></choice> et à mouteplier 
-et ount <!-- VM : à voir s'il ne vaut mieux utiliser une typologie de valeurs plus fines pour les fautes de copie, cf. Roncaglia--> greignor travail 
-<persName>Ypocras</persName> à traiter ainsi : <w><persName>Ypocras</persName></w>
-.</p>
-```
+- Est-il vraiment pertinent de tokéniser les `persName` ? Ils peuvent être composés de toponymes…
 
 
 <a id='t1-2'/>

@@ -86,13 +86,55 @@ def tokeniser(fichier):
 	contenu = contenu.replace("<persName><w>", "\n<persName><w>")
 	contenu = contenu.replace("</w></persName>", "</w></persName>\n")
 
+	# On supprime les espaces en début de ligne
 	contenu = re.sub("\n +\n", r"\n", contenu)
 	# On indente les remarques
 	# On supprime les sauts de ligne
 	contenu = re.sub("\n\n", r"\n", contenu)
 
-	nouvContenu = []
+	
+	# BOUCLE POUR L'INDENTATION DES REMARQUES
+
 	contenu = contenu.split("\n")
+	nouvContenu = []
+	body = False
+	p = False
+	for ligne in contenu:
+		# On détermine si l'on se trouve dans le body et dans les p
+		if "<body>" in ligne:
+			body = True
+		elif "</body>" in ligne:
+			body = False
+		if "<p>" in ligne:
+			p = True
+		elif "</p>" in ligne:
+			p = False
+		# On ne travaille que dans les p du body
+		if body and p:
+			# Seules les lignes qui ne commencent pas par une balise sont à tokéniser
+			if re.search("^ *[^ \<]", ligne):
+				ligne = ligne.replace("<!--", "\n<!--")
+				ligne = ligne.replace("-->", "-->\n")
+				ligne = ligne.split("\n")
+				for item in ligne:
+					nouvContenu.append(item)
+			# Et si une ligne commence par une remarque
+			elif "<!--" == ligne[:4]:
+				# On indente la suite de la ligne
+				ligne = ligne.replace("-->", "-->\n")
+				ligne = ligne.split("\n")
+				for item in ligne:
+					nouvContenu.append(item)
+			else:
+				nouvContenu.append(ligne)
+		else:
+			nouvContenu.append(ligne)
+
+	
+	# BOUCLE POUR LA TOKÉNISATION
+
+	contenu = nouvContenu
+	nouvContenu = []
 	body = False
 	p = False
 	for ligne in contenu:
