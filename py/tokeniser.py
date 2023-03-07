@@ -5,7 +5,7 @@ import regex as re
 from lxml import etree
 
 
-def traitement(xml, requetexpath, nlp):
+def traitement(xml, requetexpath, nlp, saut=True):
 	
 	# Pour les éléments dont le contenu est non mixte, comme lem
 	for index, n in enumerate(requetexpath):
@@ -15,7 +15,10 @@ def traitement(xml, requetexpath, nlp):
 			chaine = ""
 			# On boucle sur chaque token de la ligne
 			for token in ligne:
-				chaine = f"{chaine}\n<w>{token}</w>"
+				if saut:
+					chaine = f"{chaine}\n<w>{token}</w>"
+				else:
+					chaine = f"{chaine}<w>{token}</w>"
 			# On remplace le contenu de l'élément par la chaine tokénisée
 			n.text = chaine
 	
@@ -34,9 +37,24 @@ def tokeniser(fichier):
 	
 	# On collecte tous les éléments lem
 	lem = xml.xpath("//tei:lem", namespaces=nsmap)
+	
+	# On collecte les persName qui ne sont pas dasn les rdg
+	tousPersNames = xml.xpath("//tei:body//tei:p//tei:persName", namespaces=nsmap)
+	selectPersNames = []
+	# On boucle sur les persNames pour les trier
+	for item in tousPersNames:
+		# On récupère le parent du persName
+		parent = item.getparent()
+		balise = parent.tag[29:]
+		# Si la balise n'est pas dans un rdg on l'ajoute à la sélection
+		if balise != "rdg":
+			selectPersNames.append(item)
+
+	# TOKÉNISATION DES ÉLÉMENTS
 
 	xml = traitement(xml, requetexpath=lem, nlp=nlp)
-	
+	xml = traitement(xml, requetexpath=selectPersNames, nlp=nlp, saut=False)
+
 	sortie = fichier.replace(".xml", "-token.xml")
 	# On écrit le fichier TEI de sortie
 	xml.write(sortie, encoding="utf8", pretty_print=True)
@@ -50,7 +68,7 @@ def tokeniser(fichier):
 	
 	# CORRECTION DE L'INDENTATION DU FICHIER TEI
 	
-	indenter = ["p", "lem", "app", "choice", "corr", "persName"]
+	indenter = ["p", "lem", "app", "choice", "corr"]
 	
 	# On indente les éléments en sautant une ligne avant et une après
 	for elt in indenter:
@@ -62,8 +80,14 @@ def tokeniser(fichier):
 		contenu = re.sub(f"([^\n])</{elt}>", fr"\1\n</{elt}>", contenu)
 		# On revient à la ligne après l'élément fermant
 		contenu = re.sub(f"</{elt}>([^\n])", fr"</{elt}>\n\1", contenu)
+	
+	# Un persName tokénisé doit être suivi d'un saut de ligne
+	# Cette intervention permet que l'indentation permette de prendre en compte le texte autour des persName dans les lem
+	contenu = contenu.replace("<persName><w>", "\n<persName><w>")
+	contenu = contenu.replace("</w></persName>", "</w></persName>\n")
 
 	contenu = re.sub("\n +\n", r"\n", contenu)
+	# On indente les remarques
 	# On supprime les sauts de ligne
 	contenu = re.sub("\n\n", r"\n", contenu)
 
