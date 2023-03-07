@@ -1,12 +1,15 @@
 import click
+import csv
 import spacy
 import regex as re
 
 from lxml import etree
 
 
-def traitement(xml, requetexpath, nlp, saut=True):
-	
+def traitntXpath(xml, requetexpath, nlp, saut=True):
+	"""
+	Cette fonction tokénise des listes d'éléments collectées via une requête xpath
+	"""
 	# Pour les éléments dont le contenu est non mixte, comme lem
 	for index, n in enumerate(requetexpath):
 		if n.text:
@@ -52,8 +55,8 @@ def tokeniser(fichier):
 
 	# TOKÉNISATION DES ÉLÉMENTS
 
-	xml = traitement(xml, requetexpath=lem, nlp=nlp)
-	xml = traitement(xml, requetexpath=selectPersNames, nlp=nlp, saut=False)
+	xml = traitntXpath(xml, requetexpath=lem, nlp=nlp)
+	xml = traitntXpath(xml, requetexpath=selectPersNames, nlp=nlp, saut=False)
 
 	sortie = fichier.replace(".xml", "-token.xml")
 	# On écrit le fichier TEI de sortie
@@ -168,8 +171,43 @@ def tokeniser(fichier):
 		nouvContenu.append(ligne)
 	contenu = "\n".join(nouvContenu)
 
-
+	# On écrit le fichier xml de sortie
 	with open(sortie, mode="w") as f:
 		f.write(contenu)
+
+
+	# EXPORT DES MOTS
+
+	# On instancie l'arbre xml à partir du fichier tokénisé
+	xml = etree.parse(sortie)
+
+	# On collecte tous les éléments w
+	words = xml.xpath("//tei:w", namespaces=nsmap)
+
+	mots = []
+	txt = ""
+	# On boucle sur chaque élément
+	for w in words:
+		mots.append(w.text)
+		txt = txt + w.text + " "
+
+	# On exporte la liste dans un csv
+	destinationCSV = sortie.replace("tei/", "csv/").replace("-token.xml", ".csv")
+	with open(destinationCSV, mode="w") as csvf:
+		ecriveur = csv.writer(csvf, delimiter="\t", quotechar="|")
+		ecriveur.writerow(["form"])
+		for item in mots:
+			ecriveur.writerow([item])
+		print(f"Le fichier {destinationCSV} a été écrit correctement.")
+
+	# Transformations du texte pour alignement avec pyrrha
+	txt = txt.replace("’", "")
+	txt = txt.replace("'", "")
+
+	# On exporte le texte dans un fichier txt
+	destinationTxt = sortie.replace("tei/", "txt/").replace("-token.xml", ".txt")
+	with open(destinationTxt, mode="w") as txtf:
+		txtf.write(txt)
+		print(f"Le fichier {destinationTxt} a été écrit correctement.")
 
 tokeniser()
