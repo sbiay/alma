@@ -3,10 +3,10 @@ Alma
 
 Plan :
 1. [Lemmatisation et enrichissement morpho-syntaxique 👍](#t1)
-	1. [Tokénisation des éditions TEI 👍](#t1-1)
-	2. [Export des tokens 👍](#t1-2)
-	3. [Lemmatisation à l'aide de Pyrrha 👍](#t1-3)
-	4. [Enrichissement de l'édition TEI à l'aide des données de Pyrrha 👍](#t1-4)
+	1. [Tokénisation des éditions TEI ](#t1-1)
+	2. [Export des tokens ](#t1-2)
+	3. [Lemmatisation à l'aide de Pyrrha ](#t1-3)
+	4. [Enrichissement de l'édition TEI à l'aide des données de Pyrrha ](#t1-4)
 
 [comment]: <> (FINET)
 
@@ -27,7 +27,7 @@ python3 py/tokeniser.py TEI.xml
 
 <a id='t1-1'/>
 
-## Tokénisation des éditions TEI 👍
+## Tokénisation des éditions TEI 
 
 On applique les balises `w` sur tous les éléments à tokéniser (y compris la ponctuation de façon provisoire).
 
@@ -42,20 +42,20 @@ Exemple de résultat [ici](./tei/TrotulaPr1M_edition-token.xml).
 
 <a id='t1-2'/>
 
-## Export des tokens 👍
+## Export des tokens 
 
 On les écrit dans un fichier txt, seul format accepté par Pyrrha.
 
 
 <a id='t1-3'/>
 
-## Lemmatisation à l'aide de Pyrrha 👍
+## Lemmatisation à l'aide de Pyrrha 
 
 La seule différence de comportement observée entre la tokénisation que l'on a appliquée au fichier TEI avec **tokenise.py** et le lemmatiseur Pyrrha est le traitement des apostrophes, que Pyrrha détache du mot et traite à part. Il a suffi de supprimer les apostrophes de l'export `txt` pour obtenir le même nombre de tokens.
 
 
 <a id='t1-4'/>
 
-## Enrichissement de l'édition TEI à l'aide des données de Pyrrha 👍
+## Enrichissement de l'édition TEI à l'aide des données de Pyrrha 
 
 Résultat dans le fichier [./tei/TrotulaPr1M_edition-enrichi.xml](./tei/TrotulaPr1M_edition-enrichi.xml)
