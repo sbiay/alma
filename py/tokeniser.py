@@ -11,30 +11,11 @@ def tokeniser(fichier):
 	xml = etree.parse(fichier)
 	nsmap = {'tei': "http://www.tei-c.org/ns/1.0"}
 
-	# On cherche les mots à tokéniser dans les éléments :
-	# - lem
-	# - rdg : pas sûr
-
-	lem = xml.xpath("//tei:lem", namespaces=nsmap)
-	#ps = xml.xpath("//tei:text//tei:body//tei:p/text()", namespaces=nsmap)
+	# On instancie la fonction de tokénisation en français
 	nlp = spacy.load("fr_core_news_sm")
 	
-	"""
-	# Pour le contenu des éléments p qui est mixte
-	if ps:
-		# On boucle sur chaque partie des éléments p
-		for index, p in enumerate(ps):
-			doc = nlp(str(p))
-			ligne = [token.text for token in doc]
-			chaine = ""
-			# On boucle sur chaque token de la ligne
-			for token in ligne:
-				if token != " " and token:
-					chaine = f"{chaine}<w>{token}</w>"
-			# ps[index] est ce que l'on veut remplacer
-			# chaine est ce par quoi on veut le remplacer
+	lem = xml.xpath("//tei:lem", namespaces=nsmap)
 
-	"""
 	# Pour les éléments dont le contenu est non mixte, comme lem
 	for index, n in enumerate(lem):
 		if n.text:
@@ -55,14 +36,29 @@ def tokeniser(fichier):
 	with open(sortie) as f:
 		contenu = f.read()
 
+	# Transformation des balises écrites précédemment pour les éléments w
 	contenu = re.sub("&lt;([\/]?)w&gt;", r"<\1w>", contenu)
-	# On indente les app en sautant un ligne avant et après
-	contenu = re.sub("([^\n])<app>", r"\1\n<app>", contenu)
-	contenu = re.sub("</app>([^\n])", r"</app>\n\1", contenu)
-	contenu = re.sub("([^\n])</app>", r"\1\n</app>", contenu)
+	
+	# CORRECTION DE L'INDENTATION DU FICHIER TEI
+	indenter = ["p", "lem", "app"]
+	# On indente les éléments en sautant une ligne avant et une après
+	for elt in indenter:
+		# On revient à la ligne avant l'élément ouvrant
+		contenu = re.sub(f"([^\n])<{elt}>", fr"\1\n<{elt}>", contenu)
+		# On revient à la ligne après l'élément ouvrant
+		contenu = re.sub(f"<{elt}>([^\n])", fr"<{elt}>\n\1", contenu)
+		# On revient à la ligne avant l'élément fermant
+		contenu = re.sub(f"([^\n])</{elt}>", fr"\1\n</{elt}>", contenu)
+		# On revient à la ligne après l'élément fermant
+		contenu = re.sub(f"</{elt}>([^\n])", fr"</{elt}>\n\1", contenu)
+	# On indente les app en sautant une ligne avant et après
+	#contenu = re.sub("([^\n])<app>", r"\1\n<app>", contenu)
+	#contenu = re.sub("</app>([^\n])", r"</app>\n\1", contenu)
+	#contenu = re.sub("([^\n])</app>", r"\1\n</app>", contenu)
 	# On indente les lem en sautant un ligne avant et après
-	contenu = re.sub("([^\n])<lem", r"\1\n<lem", contenu)
-	contenu = re.sub("</lem>([^\n])", r"\n</lem>\n\1", contenu)
+	#contenu = re.sub("([^\n])<lem", r"\1\n<lem", contenu)
+	#contenu = re.sub("</lem>([^\n])", r"\n</lem>\n\1", contenu)
+
 	contenu = re.sub("\n +\n", r"\n", contenu)
 	# On supprime les sauts de ligne
 	contenu = re.sub("\n\n", r"\n", contenu)
