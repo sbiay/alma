@@ -14,7 +14,7 @@ Ce dépôt est dédié à l'ingénierie des données et des textes du projet **A
 
 <a id='t1'/>
 
-# Lemmatisation et enrichissement morpho-syntaxique
+# Lemmatisation et enrichissement morpho-syntaxique 👍
 
 Mode d'emploi :
 
@@ -35,13 +35,19 @@ Exemple de résultat [ici](./tei/TrotulaPr1M_edition-token.xml).
 
 **Questions** :
 
-- Est-il vraiment pertinent de tokéniser les `persName` ? Ils peuvent être composés de toponymes…
+- Est-il vraiment pertinent de tokéniser les `persName` ? Ils peuvent être composés (ce qui appelle plusieurs `w`)…
 
 
 <a id='t1-2'/>
 
-## Export des mots et de la ponctuation
+## Export des tokens 👍
 
-1. On les écrit dans un fichier csv
+On les écrit dans un fichier txt, seul format accepté par Pyrrha.
 
-2. On les écrit dans un fichier txt
+## Lemmatisation à l'aide de Pyrrha 👍
+
+La seule différence de comportement observée entre la tokénisation que l'on a appliquée au fichier TEI avec **tokenise.py** et le lemmatiseur Pyrrha est le traitement des apostrophes, que Pyrrha détache du mot et traite à part. Il a suffi de supprimer les apostrophes de l'export `txt` pour obtenir le même nombre de tokens.
+
+## Enrichissement de l'édition TEI à l'aide des données de Pyrrha 👍
+
+Résultat dans le fichier [./tei/TrotulaPr1M_edition-enrichi.xml](./tei/TrotulaPr1M_edition-enrichi.xml)

@@ -191,7 +191,7 @@ def tokeniser(fichier):
 		mots.append(w.text)
 		txt = txt + w.text + " "
 
-	# On exporte la liste dans un csv
+	"""On exporte la liste dans un csv si l'on veut contrôler facilement le nombre de lignes
 	destinationCSV = sortie.replace("tei/", "csv/").replace("-token.xml", ".csv")
 	with open(destinationCSV, mode="w") as csvf:
 		ecriveur = csv.writer(csvf, delimiter="\t", quotechar="|")
@@ -199,6 +199,7 @@ def tokeniser(fichier):
 		for item in mots:
 			ecriveur.writerow([item])
 		print(f"Le fichier {destinationCSV} a été écrit correctement.")
+	"""
 
 	# Transformations du texte pour alignement avec pyrrha
 	txt = txt.replace("’", "")
