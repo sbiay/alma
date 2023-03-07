@@ -40,7 +40,9 @@ def tokeniser(fichier):
 	contenu = re.sub("&lt;([\/]?)w&gt;", r"<\1w>", contenu)
 	
 	# CORRECTION DE L'INDENTATION DU FICHIER TEI
-	indenter = ["p", "lem", "app"]
+	
+	indenter = ["p", "lem", "app", "choice", "corr"]
+	
 	# On indente les éléments en sautant une ligne avant et une après
 	for elt in indenter:
 		# On revient à la ligne avant l'élément ouvrant
@@ -51,13 +53,6 @@ def tokeniser(fichier):
 		contenu = re.sub(f"([^\n])</{elt}>", fr"\1\n</{elt}>", contenu)
 		# On revient à la ligne après l'élément fermant
 		contenu = re.sub(f"</{elt}>([^\n])", fr"</{elt}>\n\1", contenu)
-	# On indente les app en sautant une ligne avant et après
-	#contenu = re.sub("([^\n])<app>", r"\1\n<app>", contenu)
-	#contenu = re.sub("</app>([^\n])", r"</app>\n\1", contenu)
-	#contenu = re.sub("([^\n])</app>", r"\1\n</app>", contenu)
-	# On indente les lem en sautant un ligne avant et après
-	#contenu = re.sub("([^\n])<lem", r"\1\n<lem", contenu)
-	#contenu = re.sub("</lem>([^\n])", r"\n</lem>\n\1", contenu)
 
 	contenu = re.sub("\n +\n", r"\n", contenu)
 	# On supprime les sauts de ligne
