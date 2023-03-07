@@ -4,6 +4,24 @@ import regex as re
 
 from lxml import etree
 
+
+def traitement(xml, requetexpath, nlp):
+	
+	# Pour les éléments dont le contenu est non mixte, comme lem
+	for index, n in enumerate(requetexpath):
+		if n.text:
+			doc = nlp(n.text)
+			ligne = [token.text for token in doc]
+			chaine = ""
+			# On boucle sur chaque token de la ligne
+			for token in ligne:
+				chaine = f"{chaine}\n<w>{token}</w>"
+			# On remplace le contenu de l'élément par la chaine tokénisée
+			n.text = chaine
+	
+	return xml
+
+
 @click.command()
 @click.argument("FICHIER")
 def tokeniser(fichier):
@@ -14,20 +32,11 @@ def tokeniser(fichier):
 	# On instancie la fonction de tokénisation en français
 	nlp = spacy.load("fr_core_news_sm")
 	
+	# On collecte tous les éléments lem
 	lem = xml.xpath("//tei:lem", namespaces=nsmap)
 
-	# Pour les éléments dont le contenu est non mixte, comme lem
-	for index, n in enumerate(lem):
-		if n.text:
-			doc = nlp(n.text)
-			ligne = [token.text for token in doc]
-			chaine = ""
-			# On boucle sur chaque token de la ligne
-			for token in ligne:
-				chaine = f"{chaine}\n<w>{token}</w>"
-			# On remplace le contenu de l'élément par la chaine tokénisée
-			n.text = chaine
-
+	xml = traitement(xml, requetexpath=lem, nlp=nlp)
+	
 	sortie = fichier.replace(".xml", "-token.xml")
 	# On écrit le fichier TEI de sortie
 	xml.write(sortie, encoding="utf8", pretty_print=True)
@@ -41,7 +50,7 @@ def tokeniser(fichier):
 	
 	# CORRECTION DE L'INDENTATION DU FICHIER TEI
 	
-	indenter = ["p", "lem", "app", "choice", "corr"]
+	indenter = ["p", "lem", "app", "choice", "corr", "persName"]
 	
 	# On indente les éléments en sautant une ligne avant et une après
 	for elt in indenter:
